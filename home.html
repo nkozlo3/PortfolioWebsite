@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link
+    rel="stylesheet"
+    href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <title style="color:rgb(0, 251, 255)"> Neil Kozlowski</title>
+</head>
+<body>
+    <var></var>
+    <link id="STYLE_" rel="stylesheet" href="orange.css">
+
+    <script>
+        function changeTheme() {
+            console.log("changeTheme() called");
+            var oldLink = document.getElementById("STYLE_");
+
+            // get oldLink's href value
+            var oldHref = oldLink.getAttribute("href");
+
+            if (oldHref == "orange.css") {
+                var newHref = "blue.css";
+            } else {
+                var newHref = "orange.css";
+            }
+
+            // set oldLink's href value
+            oldLink.setAttribute("href", newHref);
+        }
+    </script>
+
+    <p style="color:pink; text-align:left; font-size: large;"> 
+        <span style="position:relative; right:-300px; ">
+        <a id="home">
+        Neil
+        </a>
+        </span>
+        <span style="float:right; position:relative; left:-175px"> 
+        <a id="ChangeTheme">
+           <button id="ThemeChangeButton" style="padding: 0%; border: none; background: none;" onclick="changeTheme()"><i class="uil uil-ellipsis-v changeThemeButton"></i></button> 
+        </a>
+        </span>
+        <span style="float:right; position:relative; left:-200px"> 
+        <a href="#ContactMe">
+            Contact Me
+        </a>
+        </span>
+        <span style="float:right; position:relative; left:-225px"> 
+            <a href="#Projects">
+            Projects
+        </a>
+        </span>
+        <span style="float:right; position:relative; left:-250px"> 
+            <a href="#Skills">
+            Skills
+        </a>
+        </span>
+        <span style="float:right; position:relative; left:-275px"> 
+            <a href="#About">
+            About
+        </a>
+        </span>
+        <span style="float:right; position:relative; left:-300px"> 
+            <a href="#Home">
+            Home
+        </a>
+        </span>
+    </p>
+
+    <div style="display: flex;">
+        <div style="width: 30%;">
+            <div style="position:relative; top: 200px; left: 375px;">
+                <p>
+                    <a href="https://github.com/nkozlo3" target="_blank">
+                        <i class="uil uil-github linkIcons"></i>
+                    </a>
+                </p>
+                <p>
+                    <a href="https://linkedin.com/in/kozlowskiN" target="_blank">
+                        <i class="uil uil-linkedin-alt linkIcons"></i>
+                    </a>
+                </p>
+                <p>  <!--Email link to nkozlo3@illinois.edu-->
+                    <a href="mailto:nkozlo3@illinois.edu">
+                        <i class="uil uil-envelope-send linkIcons"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+            <div style="width: 37%">
+                <h1 style="position:relative; top: 75px"> Hi, I am <br> Neil Kozlowski </h1>
+                <p style="color:rgb(54, 53, 53); position:relative; top:53px; text-align:left; font-size:larger;">
+                    Computer Scientist 
+                </p>
+                <p style="color:rgb(54, 53, 53); position: relative; top:40px; text-align: left;">
+                    I am a Junior at University of Illinois at Urbana-Champaign studying<br> to obtain my Bachelor's degree in Computer Science + Philosophy.
+                    My<br> greatest strengths are communication, leadership skills,
+                    and adaptability<br> which will assist me throughout my professional career.
+                    At school I have<br> consistently maintained above a 3.80 GPA while 
+                    maintaining membership<br> in various clubs as well as participating
+                    in different volunteer programs.<br>
+                </p>
+                <a href="#ContactMe">
+                    <button style="position:relative; bottom:-35px;" class="cButton contactButton">Contact Me <i class="uil uil-navigator"></i></button>
+                </a>
+
+                <p style="color:white; position:relative; bottom:-95px;">
+                    <a href="#About">
+                        <i class="uil uil-mouse mouseIcon"></i>
+                        <span style="font-size: large;" class="scrollText">Scroll Down</span>
+                        <i class="uil uil-arrow-down arrowIcon"></i>
+                    </a>
+                </p>
+        </div>
+    </div>
+    
+</body>
+</html>
