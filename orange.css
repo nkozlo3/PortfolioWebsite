@@ -1,115 +1,125 @@
-h1
-{
-    color:rgb(255, 255, 255);
-    text-align: left;
-    font-size: 1cm;
-}
-body 
-{
-    /* background-color:rgb(240, 128, 128); */
-    background-color: rgb(240, 128, 128);
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-size: 1cm;
 }
 
-.cButton
-{
-    background-color:rgb(0, 59, 223);
-    /* color:rgb(240, 128, 128); */
-    background-color: rgb(240, 128, 128);
-    border:none;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
+body {
+  /* background-color:rgb(240, 128, 128); */
+  background-color: rgb(240, 128, 128);
 }
-.contactButton
-{
-    /* background-color:rgb(240, 128, 128); */
-    background-color: rgb(240, 128, 128);
-    color:white;
-    border: 2px solid rgb(0, 59, 223);
+
+.cButton {
+  background-color: rgb(0, 59, 223);
+  /* color:rgb(240, 128, 128); */
+  background-color: rgb(240, 128, 128);
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
-.changeThemeButton 
-{
-    font-size: 1.25rem;
-    color: rgb(0, 59, 223);
-    margin-right: var(--mb-1);
-    cursor: pointer;
-    background: none;
-    border: none;
-    margin:0;
-    padding:0;
+
+.contactButton {
+  /* background-color:rgb(240, 128, 128); */
+  background-color: rgb(240, 128, 128);
+  color: white;
+  border: 2px solid rgb(0, 59, 223);
 }
-.changeThemeButton:hover 
-{
-    color: rgb(67, 206, 252)
+
+.changeThemeButton {
+  font-size: 1.25rem;
+  color: rgb(0, 59, 223);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
-.contactButton:hover
-{
-    background-color: rgb(0, 59, 223);
-    color: white;
+
+.changeThemeButton:hover {
+  color: rgb(67, 206, 252);
 }
-a:link 
-{
+
+.contactButton:hover {
+  background-color: rgb(0, 59, 223);
+  color: white;
+}
+
+a:link {
+  color: rgb(129, 119, 121);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(129, 119, 121);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(0, 59, 223);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: rgb(0, 59, 223);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.scrollButton {
+  color: var(--first-color);
+  transition: 0.3s;
+  margin-left: 3rem;
+}
+
+.scrollButton:hover {
+  transform: translateY(0.25rem);
+}
+
+.scrollText {
+  font-size: var(--small-font-size);
   color: var(--title-color);
-  background-color: transparent;
-  text-decoration: none;
+  font-weight: var(--font-medium);
+  margin-right: var(--mb-0-25);
 }
-a:visited 
-{
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover 
-{
-  color: rgb(0, 59, 223);
-  background-color: transparent;
-  text-decoration: none;
-}
-a:active 
-{
-  color: rgb(0, 59, 223);
-  background-color: transparent;
-  text-decoration: none;
-}
-.scrollButton 
-{
-    color: var(--first-color);
-    transition: 0.3s;
-    margin-left: 3rem;
 
+.linkIcons {
+  color: rgb(0, 59, 223);
+  font-size: 1.5rem;
 }
-.scrollButton:hover 
-{
-    transform: translateY(0.25rem);
+
+.linkIcons:hover {
+  color: rgb(67, 206, 252);
 }
-.scrollText 
-{
-    font-size: var(--small-font-size);
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-    margin-right: var(--mb-0-25);
+
+.mouseIcon {
+  color: rgb(0, 59, 223);
+  font-size: 2rem;
 }
-.linkIcons
-{
-    color: rgb(0, 59, 223);
-    font-size: 1.5rem;
+
+.arrowIcon {
+  color: rgb(0, 59, 223);
+  font-size: 1.5rem;
 }
-.linkIcons:hover
-{
-    color: rgb(67, 206, 252);
+
+.Neil {
+  color: rgb(129, 119, 121);
+  background-color: transparent;
+  text-decoration: none;
 }
-.mouseIcon
-{
-    color: rgb(0, 59, 223);
-    font-size: 2rem;
-}
-.arrowIcon
-{
-    color: rgb(0, 59, 223);
-    font-size: 1.5rem;
+
+.navbar {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
 }
