@@ -121,4 +121,16 @@ a:active {
   overflow: hidden;
   top: 0;
   width: 100%;
+  z-index: 999;
+}
+.headers {
+  color: white;
+  font-size: xx-large;
+}
+.paragraphs {
+  color: rgb(54, 53, 53);
+  text-align: left;
+}
+.placeholderText {
+  color: rgb(67, 206, 252);
 }
