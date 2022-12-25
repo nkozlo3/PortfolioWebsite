@@ -1,2 +1,2 @@
 # PortfolioWebsite
- Color theme changing portfolio website created using CSS, JS, and HTML
+ Theme changing portfolio website created using CSS and HTML
