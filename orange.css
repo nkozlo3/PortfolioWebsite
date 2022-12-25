@@ -136,3 +136,9 @@ a:active {
 .placeholderText {
   color: rgb(234, 101, 44);
 }
+.skillImage {
+  color: white;
+}
+.skillImage:hover {
+  rotate: 25deg;
+}
