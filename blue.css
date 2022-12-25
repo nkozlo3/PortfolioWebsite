@@ -31,6 +31,17 @@ body {
   border: 2px solid rgb(240, 128, 128);
 }
 
+.projectImageButton {
+  background-color: rgb(240, 128, 128);
+  color: white;
+  border: 2px solid rgb(240, 128, 128);
+}
+.projectImageButton:hover {
+  background-color: rgb(0, 59, 223);
+  color: white;
+  box-shadow: 10px 10px 5px #888888;
+}
+
 .changeThemeButton {
   font-size: 1.25rem;
   color: rgb(240, 128, 128);
@@ -139,4 +150,16 @@ a:active {
 }
 .skillImage:hover {
   rotate: 25deg;
+}
+.bottomText {
+  font-size: var(--small-font-size);
+  display: block;
+  text-align: center;
+}
+.inputBox {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(240, 128, 128);
+  background-color: transparent;
 }
