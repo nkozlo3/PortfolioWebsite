@@ -7,854 +7,884 @@
     />
     <title style="color: rgb(0, 251, 255)">Neil Kozlowski</title>
   </head>
-  <body>
-    <var></var>
-    <link id="STYLE_" rel="stylesheet" href="blue.css" />
+  <div id="wrapper" style="margin-left: auto; margin-right: auto; width: 960px">
+    <body>
+      <var></var>
+      <link id="STYLE_" rel="stylesheet" href="blue.css" />
 
-    <script>
-      function changeTheme() {
-        console.log("changeTheme() called");
-        var oldLink = document.getElementById("STYLE_");
+      <script>
+        function changeTheme() {
+          console.log("changeTheme() called");
+          var oldLink = document.getElementById("STYLE_");
 
-        // get oldLink's href value
-        var oldHref = oldLink.getAttribute("href");
+          // get oldLink's href value
+          var oldHref = oldLink.getAttribute("href");
 
-        if (oldHref == "orange.css") {
-          var newHref = "blue.css";
-        } else {
-          var newHref = "orange.css";
+          if (oldHref == "orange.css") {
+            var newHref = "blue.css";
+          } else {
+            var newHref = "orange.css";
+          }
+
+          // set oldLink's href value
+          oldLink.setAttribute("href", newHref);
         }
+      </script>
+      <script>
+        // function called on page load
+        window.onload = function () {
+          var expHeader = document.getElementById("experienceHeader");
+          expHeader.className = "headers projectHeader";
 
-        // set oldLink's href value
-        oldLink.setAttribute("href", newHref);
-      }
-    </script>
-    <script>
-      // function called on page load
-      window.onload = function () {
-        var expHeader = document.getElementById("experienceHeader");
-        expHeader.className = "headers projectHeader";
+          var cyberButton = document.getElementById("cyberButton");
+          cyberButton.className = "cButton contactButton projectButtons";
 
-        var cyberButton = document.getElementById("cyberButton");
-        cyberButton.className = "cButton contactButton projectButtons";
+          var projectButton = document.getElementById("projectButton");
+          projectButton.className =
+            "cButton contactButton projectButtons projectButton-project";
 
-        var projectButton = document.getElementById("projectButton");
-        projectButton.className =
-          "cButton contactButton projectButtons projectButton-project";
+          var contactHeader = document.getElementById("contactHeader");
+          contactHeader.className = "headers contactHeader";
 
-        var contactHeader = document.getElementById("contactHeader");
-        contactHeader.className = "headers contactHeader";
+          var contactParagraph = document.getElementById("contactParagraph");
+          contactParagraph.className = "paragraphs contactParagraph";
 
-        var contactParagraph = document.getElementById("contactParagraph");
-        contactParagraph.className = "paragraphs contactParagraph";
+          var contactName = document.getElementById("contactName");
+          contactName.className = "inputBox contactInputNameBox";
 
-        var contactName = document.getElementById("contactName");
-        contactName.className = "inputBox contactInputNameBox";
+          var contactEmail = document.getElementById("contactEmail");
+          contactEmail.className = "inputBox contactInputEmailBox";
 
-        var contactEmail = document.getElementById("contactEmail");
-        contactEmail.className = "inputBox contactInputEmailBox";
+          var contactMessage = document.getElementById("contactMessage");
+          contactMessage.className = "inputBox contactInputMessageBox";
 
-        var contactMessage = document.getElementById("contactMessage");
-        contactMessage.className = "inputBox contactInputMessageBox";
+          var contactSubmitButton = document.getElementById(
+            "contactSubmitButton"
+          );
+          contactSubmitButton.className =
+            "cButton contactButton contactSubmitButton";
 
-        var contactSubmitButton = document.getElementById(
-          "contactSubmitButton"
-        );
-        contactSubmitButton.className =
-          "cButton contactButton contactSubmitButton";
+          var emailMeButton = document.getElementById("emailMeButton");
+          emailMeButton.className = "cButton contactButton mailMeButton";
 
-        var emailMeButton = document.getElementById("emailMeButton");
-        emailMeButton.className = "cButton contactButton mailMeButton";
+          var callMeButton = document.getElementById("callMeButton");
+          callMeButton.className = "cButton contactButton callMeButton";
 
-        var callMeButton = document.getElementById("callMeButton");
-        callMeButton.className = "cButton contactButton callMeButton";
+          var locateMeButton = document.getElementById("locateMeButton");
+          locateMeButton.className = "cButton contactButton locateMeButton";
 
-        var locateMeButton = document.getElementById("locateMeButton");
-        locateMeButton.className = "cButton contactButton locateMeButton";
+          var contactMePlaceholder = document.getElementById(
+            "contactMePlaceholder"
+          );
+          contactMePlaceholder.className = "paragraphs placeHolderButton";
 
-        var contactMePlaceholder = document.getElementById(
-          "contactMePlaceholder"
-        );
-        contactMePlaceholder.className = "paragraphs placeHolderButton";
+          var project = document.getElementById("projectDiv");
+          var cyber = document.getElementById("cyberDiv");
+          project.style.display = "block";
+          cyber.style.display = "none";
+        };
 
-        var project = document.getElementById("projectDiv");
-        var cyber = document.getElementById("cyberDiv");
-        project.style.display = "block";
-        cyber.style.display = "none";
-      };
+        function projectsToggle() {
+          var expHeader = document.getElementById("experienceHeader");
+          expHeader.className = "headers projectHeader";
 
-      function projectsToggle() {
-        var expHeader = document.getElementById("experienceHeader");
-        expHeader.className = "headers projectHeader";
+          var cyberButton = document.getElementById("cyberButton");
+          cyberButton.className = "cButton contactButton projectButtons";
 
-        var cyberButton = document.getElementById("cyberButton");
-        cyberButton.className = "cButton contactButton projectButtons";
+          var projectButton = document.getElementById("projectButton");
+          projectButton.className =
+            "cButton contactButton projectButtons projectButton-project";
 
-        var projectButton = document.getElementById("projectButton");
-        projectButton.className =
-          "cButton contactButton projectButtons projectButton-project";
+          var contactHeader = document.getElementById("contactHeader");
+          contactHeader.className = "headers contactHeader";
 
-        var contactHeader = document.getElementById("contactHeader");
-        contactHeader.className = "headers contactHeader";
+          var contactParagraph = document.getElementById("contactParagraph");
+          contactParagraph.className = "paragraphs contactParagraph";
 
-        var contactParagraph = document.getElementById("contactParagraph");
-        contactParagraph.className = "paragraphs contactParagraph";
+          var contactName = document.getElementById("contactName");
+          contactName.className = "inputBox contactInputNameBox";
 
-        var contactName = document.getElementById("contactName");
-        contactName.className = "inputBox contactInputNameBox";
+          var contactEmail = document.getElementById("contactEmail");
+          contactEmail.className = "inputBox contactInputEmailBox";
 
-        var contactEmail = document.getElementById("contactEmail");
-        contactEmail.className = "inputBox contactInputEmailBox";
+          var contactMessage = document.getElementById("contactMessage");
+          contactMessage.className = "inputBox contactInputMessageBox";
 
-        var contactMessage = document.getElementById("contactMessage");
-        contactMessage.className = "inputBox contactInputMessageBox";
+          var contactSubmitButton = document.getElementById(
+            "contactSubmitButton"
+          );
+          contactSubmitButton.className =
+            "cButton contactButton contactSubmitButton";
 
-        var contactSubmitButton = document.getElementById(
-          "contactSubmitButton"
-        );
-        contactSubmitButton.className =
-          "cButton contactButton contactSubmitButton";
+          var emailMeButton = document.getElementById("emailMeButton");
+          emailMeButton.className = "cButton contactButton mailMeButton";
 
-        var emailMeButton = document.getElementById("emailMeButton");
-        emailMeButton.className = "cButton contactButton mailMeButton";
+          var callMeButton = document.getElementById("callMeButton");
+          callMeButton.className = "cButton contactButton callMeButton";
 
-        var callMeButton = document.getElementById("callMeButton");
-        callMeButton.className = "cButton contactButton callMeButton";
+          var locateMeButton = document.getElementById("locateMeButton");
+          locateMeButton.className = "cButton contactButton locateMeButton";
 
-        var locateMeButton = document.getElementById("locateMeButton");
-        locateMeButton.className = "cButton contactButton locateMeButton";
+          var contactMePlaceholder = document.getElementById(
+            "contactMePlaceholder"
+          );
+          contactMePlaceholder.className = "paragraphs placeHolderButton";
 
-        var contactMePlaceholder = document.getElementById(
-          "contactMePlaceholder"
-        );
-        contactMePlaceholder.className = "paragraphs placeHolderButton";
+          var project = document.getElementById("projectDiv");
+          var cyber = document.getElementById("cyberDiv");
+          project.style.display = "block";
+          cyber.style.display = "none";
+        }
+        function cyberToggle() {
+          var expHeader = document.getElementById("experienceHeader");
+          expHeader.className = "headers projectHeader-afterCyberToggle";
 
-        var project = document.getElementById("projectDiv");
-        var cyber = document.getElementById("cyberDiv");
-        project.style.display = "block";
-        cyber.style.display = "none";
-      }
-      function cyberToggle() {
-        var expHeader = document.getElementById("experienceHeader");
-        expHeader.className = "headers projectHeader-afterCyberToggle";
+          var cyberButton = document.getElementById("cyberButton");
+          cyberButton.className =
+            "cButton contactButton projectButtons-afterCyberToggle projectButton-cyber";
 
-        var cyberButton = document.getElementById("cyberButton");
-        cyberButton.className =
-          "cButton contactButton projectButtons-afterCyberToggle projectButton-cyber";
+          var projectButton = document.getElementById("projectButton");
+          projectButton.className =
+            "cButton contactButton projectButtons-afterCyberToggle";
 
-        var projectButton = document.getElementById("projectButton");
-        projectButton.className =
-          "cButton contactButton projectButtons-afterCyberToggle";
+          var contactHeader = document.getElementById("contactHeader");
+          contactHeader.className = "headers contactHeader-afterCyberToggle";
 
-        var contactHeader = document.getElementById("contactHeader");
-        contactHeader.className = "headers contactHeader-afterCyberToggle";
+          var contactParagraph = document.getElementById("contactParagraph");
+          contactParagraph.className =
+            "paragraphs contactParagraph-afterCyberToggle";
 
-        var contactParagraph = document.getElementById("contactParagraph");
-        contactParagraph.className =
-          "paragraphs contactParagraph-afterCyberToggle";
+          var contactName = document.getElementById("contactName");
+          contactName.className =
+            "inputBox contactInputNameBox-afterCyberToggle";
 
-        var contactName = document.getElementById("contactName");
-        contactName.className = "inputBox contactInputNameBox-afterCyberToggle";
+          var contactEmail = document.getElementById("contactEmail");
+          contactEmail.className =
+            "inputBox contactInputEmailBox-afterCyberToggle";
 
-        var contactEmail = document.getElementById("contactEmail");
-        contactEmail.className =
-          "inputBox contactInputEmailBox-afterCyberToggle";
+          var contactMessage = document.getElementById("contactMessage");
+          contactMessage.className =
+            "inputBox contactInputMessageBox-afterCyberToggle";
 
-        var contactMessage = document.getElementById("contactMessage");
-        contactMessage.className =
-          "inputBox contactInputMessageBox-afterCyberToggle";
+          var contactSubmitButton = document.getElementById(
+            "contactSubmitButton"
+          );
 
-        var contactSubmitButton = document.getElementById(
-          "contactSubmitButton"
-        );
+          contactSubmitButton.className =
+            "cButton contactButton contactSubmitButton-afterCyberToggle";
 
-        contactSubmitButton.className =
-          "cButton contactButton contactSubmitButton-afterCyberToggle";
+          var emailMeButton = document.getElementById("emailMeButton");
+          emailMeButton.className =
+            "cButton contactButton mailMeButton-afterCyberToggle";
 
-        var emailMeButton = document.getElementById("emailMeButton");
-        emailMeButton.className =
-          "cButton contactButton mailMeButton-afterCyberToggle";
+          var callMeButton = document.getElementById("callMeButton");
+          callMeButton.className =
+            "cButton contactButton callMeButton-afterCyberToggle";
 
-        var callMeButton = document.getElementById("callMeButton");
-        callMeButton.className =
-          "cButton contactButton callMeButton-afterCyberToggle";
+          var locateMeButton = document.getElementById("locateMeButton");
+          locateMeButton.className =
+            "cButton contactButton locateMeButton-afterCyberToggle";
 
-        var locateMeButton = document.getElementById("locateMeButton");
-        locateMeButton.className =
-          "cButton contactButton locateMeButton-afterCyberToggle";
+          var contactMePlaceholder = document.getElementById(
+            "contactMePlaceholder"
+          );
+          contactMePlaceholder.className =
+            "paragraphs placeHolderButton-afterCyberToggle";
 
-        var contactMePlaceholder = document.getElementById(
-          "contactMePlaceholder"
-        );
-        contactMePlaceholder.className =
-          "paragraphs placeHolderButton-afterCyberToggle";
-
-        var project = document.getElementById("projectDiv");
-        var cyber = document.getElementById("cyberDiv");
-        cyber.style.display = "block";
-        project.style.display = "none";
-      }
-    </script>
-    <!--===========================================================NavBar Section===========================================================-->
-    <section id="navbar">
-      <div class="navbar">
-        <p style="color: pink; text-align: left; font-size: large">
-          <span style="position: relative; left: 15%">
-            <a class="Neil"> Neil </a>
-          </span>
-          <span style="float: right; position: relative; right: 12%">
-            <a id="ChangeTheme">
-              <button
-                id="ThemeChangeButton"
-                style="padding: 0%; border: none; background: none"
-                onclick="changeTheme()"
-              >
-                <i class="uil uil-ellipsis-v changeThemeButton"></i>
-              </button>
-            </a>
-          </span>
-          <span style="float: right; position: relative; right: 13.5%">
-            <a href="#ContactMe"> Contact Me </a>
-          </span>
-          <span style="float: right; position: relative; right: 15%">
-            <a href="#Experience"> Experience </a>
-          </span>
-          <span style="float: right; position: relative; right: 16.5%">
-            <a href="#Skills"> Skills </a>
-          </span>
-          <span style="float: right; position: relative; right: 18%">
-            <a href="#About"> About </a>
-          </span>
-          <span style="float: right; position: relative; right: 19.5%">
-            <a href="#Home"> Home </a>
-          </span>
-        </p>
-      </div>
-    </section>
-    <!--===========================================================End NavBar Section===========================================================-->
-
-    <!--===========================================================Start Home Section===========================================================-->
-    <section id="home">
-      <div style="display: flex">
-        <div style="width: 30%">
-          <div style="position: relative; top: 47%; left: 87%">
-            <p>
-              <a href="https://github.com/nkozlo3" target="_blank">
-                <i class="uil uil-github linkIcons"></i>
+          var project = document.getElementById("projectDiv");
+          var cyber = document.getElementById("cyberDiv");
+          cyber.style.display = "block";
+          project.style.display = "none";
+        }
+      </script>
+      <!--===========================================================NavBar Section===========================================================-->
+      <section id="navbar">
+        <div class="navbar">
+          <p style="color: pink; text-align: left; font-size: large">
+            <span style="position: relative">
+              <a class="Neil"> Neil </a>
+            </span>
+            <span style="float: right; position: relative; right: 25.5%">
+              <a id="ChangeTheme">
+                <button
+                  id="ThemeChangeButton"
+                  style="padding: 0%; border: none; background: none"
+                  onclick="changeTheme()"
+                >
+                  <i class="uil uil-ellipsis-v changeThemeButton"></i>
+                </button>
               </a>
-            </p>
-            <p>
-              <a href="https://linkedin.com/in/kozlowskiN" target="_blank">
-                <i class="uil uil-linkedin-alt linkIcons"></i>
-              </a>
-            </p>
-            <p>
-              <!--Email link to nkozlo3@illinois.edu-->
-              <a href="mailto:nkozlo3@illinois.edu">
-                <i class="uil uil-envelope-send linkIcons"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-        <div style="width: 37%">
-          <h1 style="position: relative; top: 17%" class="headers">
-            <a id="Home">
-              Hi, I am <br />
-              Neil Kozlowski
-            </a>
-          </h1>
-          <p
-            style="
-              color: rgb(54, 53, 53);
-              position: relative;
-              top: 12%;
-              text-align: left;
-              font-size: larger;
-            "
-          >
-            Computer Scientist
-          </p>
-          <p
-            style="position: relative; top: 8.5%; text-align: left"
-            class="paragraphs"
-          >
-            I am a Junior at University of Illinois at Urbana-Champaign
-            studying<br />
-            to obtain my Bachelor's degree in Computer Science + Philosophy.
-            My<br />
-            greatest strengths are communication, leadership skills, and
-            adaptability<br />
-            which will assist me throughout my professional career. At school I
-            have<br />
-            consistently maintained above a 3.80 GPA while maintaining
-            membership<br />
-            in various clubs as well as participating in different volunteer
-            programs.<br />
-          </p>
-          <a href="#ContactMe">
-            <button
-              style="position: relative; top: 10%"
-              class="cButton contactButton"
-            >
-              Contact Me <i class="uil uil-navigator"></i>
-            </button>
-          </a>
-
-          <p style="color: white; position: relative; bottom: -45%">
-            <a href="#About">
-              <i class="uil uil-mouse mouseIcon"></i>
-              <span style="font-size: large" class="scrollText"
-                >Scroll Down</span
-              >
-              <i class="uil uil-arrow-down arrowIcon"></i>
-            </a>
-          </p>
-        </div>
-        <div style="width: 33%">
-          <img
-            src="assets/port1.png"
-            style="position: relative; top: 45%; left: 10%"
-          />
-        </div>
-      </div>
-    </section>
-    <!--===========================================================End Home Section===========================================================-->
-
-    <!--=========================================================== Start About Section===========================================================-->
-    <section id="about">
-      <div style="display: flex">
-        <div style="width: 50%">
-          <h2
-            style="
-              text-align: center;
-              position: relative;
-              left: 50%;
-              top: 40%;
-              font-size: 1cm;
-            "
-            class="headers"
-          >
-            <a id="About"> About Me </a>
-          </h2>
-          <p
-            style="
-              font-size: larger;
-              position: relative;
-              left: 50%;
-              top: 38%;
-              text-align: center;
-            "
-            class="paragraphs"
-          >
-            My Introduction
-          </p>
-        </div>
-        <div style="width: 25%">
-          <p class="paragraphs" style="position: relative; top: 60%; left: 30%">
-            A committed and hardworking individual, currently a Junior at The
-            University of Illinois at Urbana-Champaign studying to obtain a
-            bachelor's degree in Computer Science + Philosophy. Experience and
-            proficiency with C++, C#, and other OOP languages. As well as data
-            structures and algorithm optimization. Seeking an opportunity to use
-            my knowledge of Computer Science in a professional scenario.
-          </p>
-          <p
-            style="
-              position: relative;
-              top: 60%;
-              left: 30%;
-              font-size: xx-large;
-              color: white;
-            "
-          >
-            <b> 07+ </b>
-            <span
-              style="
-                float: right;
-                position: relative;
-                right: 85%;
-                font-size: small;
-                color: rgb(54, 53, 53);
-              "
-              ><br /><br /><br />
-              Projects <br />
-              Completed
+            </span>
+            <span style="float: right; position: relative; right: 27%">
+              <a href="#ContactMe"> Contact Me </a>
+            </span>
+            <span style="float: right; position: relative; right: 28.5%">
+              <a href="#Experience"> Experience </a>
             </span>
             <span style="float: right; position: relative; right: 30%">
-              <b> 03+ </b>
-              <span
-                style="
-                  float: right;
-                  position: relative;
-                  right: 40%;
-                  font-size: small;
-                  color: rgb(54, 53, 53);
-                "
-                ><br /><br /><br />Years <br />
-                Experience
-              </span>
+              <a href="#Skills"> Skills </a>
             </span>
-            <span style="float: right; position: relative; right: -15%">
-              <b> 3.80 </b>
-              <span
-                style="
-                  float: right;
-                  position: relative;
-                  right: 50%;
-                  font-size: small;
-                  color: rgb(54, 53, 53);
-                "
-                ><br /><br /><br /><br />
-                GPA
-              </span>
+            <span style="float: right; position: relative; right: 31.5%">
+              <a href="#About"> About </a>
             </span>
-          </p>
-          <!--Resume download-->
-          <a href="assets/Resume.pdf" download target="_blank">
-            <button
-              style="position: relative; top: 65%; left: 30%"
-              class="cButton contactButton"
-            >
-              Download Resume <i class="uil uil-download-alt"></i>
-            </button>
-          </a>
-        </div>
-        <div style="width: 23%">
-          <!-- make port2.png 50% smaller-->
-          <img
-            src="assets/port2.png"
-            style="position: relative; top: 62%; right: 220%"
-            height="60%"
-          />
-        </div>
-      </div>
-    </section>
-    <!--===========================================================End About Section===========================================================-->
-
-    <!--===========================================================Start Skills Section===========================================================-->
-    <section id="skills">
-      <div style="display: flex">
-        <div style="width: 50%">
-          <h2
-            style="
-              text-align: center;
-              position: relative;
-              left: 50%;
-              top: 125%;
-              font-size: 1cm;
-            "
-            class="headers"
-          >
-            <a id="Skills"> Skills </a>
-          </h2>
-          <p
-            style="
-              font-size: larger;
-              position: relative;
-              left: 50%;
-              top: 114%;
-              text-align: center;
-            "
-            class="paragraphs"
-          >
-            My Technical Skills
-          </p>
-        </div>
-        <div style="width: 50%">
-          <!--========================================= Backend Skills ===========================================-->
-          <p
-            style="
-              position: relative;
-              top: 195%;
-              right: 30%;
-              font-size: large;
-              color: white;
-            "
-          >
-            <img
-              class="skillImage"
-              src="https://img.icons8.com/color/48/null/python--v1.png"
-            />
-            <span
-              style="
-                float: right;
-                position: relative;
-                right: 94%;
-                top: 55px;
-                font-size: medium;
-                color: white;
-              "
-              >Python
-            </span>
-
-            <span
-              style="
-                float: right;
-                position: relative;
-                text-align: center;
-                right: 57%;
-              "
-            >
-              <img
-                class="skillImage"
-                src="https://img.icons8.com/fluency/48/null/c-plus-plus-logo.png"
-              />
-              <span
-                style="
-                  float: right;
-                  position: relative;
-                  right: 45%;
-                  top: 55px;
-                  font-size: medium;
-                  color: white;
-                "
-                >C++
-              </span>
-            </span>
-            <span
-              style="
-                float: right;
-                position: relative;
-                text-align: center;
-                right: 20%;
-              "
-            >
-              <img
-                class="skillImage"
-                src="https://img.icons8.com/color/48/null/c-sharp-logo-2.png"
-              />
-              <span
-                style="
-                  float: right;
-                  position: relative;
-                  right: 45%;
-                  top: 55px;
-                  font-size: medium;
-                  color: white;
-                "
-                >C#
-              </span>
-            </span>
-          </p>
-          <!--========================================= Related Skills ===========================================-->
-          <p
-            style="
-              position: relative;
-              top: 225%;
-              right: 30%;
-              font-size: large;
-              color: white;
-            "
-          >
-            <img
-              class="skillImage"
-              src="https://img.icons8.com/color/48/null/linux--v1.png"
-            />
-            <span
-              style="
-                float: right;
-                position: relative;
-                right: 94%;
-                top: 55px;
-                font-size: medium;
-                color: white;
-              "
-              >Linux
-            </span>
-
-            <span
-              style="
-                float: right;
-                position: relative;
-                text-align: center;
-                right: 55.5%;
-              "
-            >
-              <img
-                class="skillImage"
-                src="https://img.icons8.com/color/48/null/docker.png"
-              />
-              <span
-                style="
-                  float: right;
-                  position: relative;
-                  right: 45%;
-                  top: 55px;
-                  font-size: medium;
-                  color: white;
-                "
-                >Docker
-              </span>
-            </span>
-            <span
-              style="
-                float: right;
-                position: relative;
-                text-align: center;
-                right: 15%;
-              "
-            >
-              <img
-                class="skillImage"
-                src="https://img.icons8.com/ios-filled/50/null/github.png"
-              />
-              <span
-                style="
-                  float: right;
-                  position: relative;
-                  right: 45%;
-                  top: 55px;
-                  font-size: medium;
-                  color: white;
-                "
-                >GitHub
-              </span>
-            </span>
-          </p>
-          <!--========================================= Frontend Skills ===========================================-->
-          <p
-            style="
-              position: relative;
-              top: 255%;
-              right: 30%;
-              font-size: large;
-              color: white;
-            "
-          >
-            <img
-              class="skillImage"
-              src="https://img.icons8.com/ios-filled/50/null/javascript-logo.png"
-            />
-            <span
-              style="
-                float: right;
-                position: relative;
-                right: 92%;
-                top: 55px;
-                font-size: medium;
-                color: white;
-              "
-              >JavaScript
-            </span>
-
-            <span
-              style="
-                float: right;
-                position: relative;
-                text-align: center;
-                right: 55%;
-              "
-            >
-              <img
-                class="skillImage"
-                src="https://img.icons8.com/color/48/null/css3.png"
-              />
-              <span
-                style="
-                  float: right;
-                  position: relative;
-                  right: 45%;
-                  top: 55px;
-                  font-size: medium;
-                  color: white;
-                "
-                >CSS
-              </span>
-            </span>
-            <span
-              style="
-                float: right;
-                position: relative;
-                text-align: center;
-                right: 14%;
-              "
-            >
-              <img
-                class="skillImage"
-                src="https://img.icons8.com/fluency/48/null/html-5.png"
-              />
-              <span
-                style="
-                  float: right;
-                  position: relative;
-                  right: 45%;
-                  top: 55px;
-                  font-size: medium;
-                  color: white;
-                "
-                >HTML
-              </span>
+            <span style="float: right; position: relative; right: 33%">
+              <a href="#Home"> Home </a>
             </span>
           </p>
         </div>
-      </div>
-    </section>
+      </section>
+      <!--===========================================================End NavBar Section===========================================================-->
 
-    <!--===========================================================End Skills Section===========================================================-->
-
-    <!--===========================================================Start Experience Section===========================================================-->
-    <!--===================================================== Projects portion ===================================================-->
-    <section id="experience">
-      <div style="display: flex">
-        <div style="width: 50%">
-          <h2 id="experienceHeader" class="headers">
-            <a id="Experience"> Experience </a>
-          </h2>
-          <button onclick="projectsToggle()" id="projectButton">
-            Projects
-          </button>
-          <button onclick="cyberToggle()" id="cyberButton">
-            Cybersecurity
-          </button>
-        </div>
-        <!--========================================= Project 1 ===========================================-->
-        <div style="width: 50%" id="projectDiv">
-          <a
-            href="https://github.com/nkozlo3/LinkedListLuvrs-OpenFlights-Graph-Algorithm.git"
-            target="_blank"
-          >
-            <img src="assets/open.png" class="projectImageButton project1" />
-          </a>
-          <div class="bottomText project1-text">
-            Comprehensive data analysis using graph algorithms <br />
-            (Dijkstra, SCC, DFS, visuals) written in C++
+      <!--===========================================================Start Home Section===========================================================-->
+      <section id="home">
+        <div style="display: flex">
+          <div style="width: 30%">
+            <div style="position: relative; top: 47%; left: 60%">
+              <p>
+                <a href="https://github.com/nkozlo3" target="_blank">
+                  <i class="uil uil-github linkIcons"></i>
+                </a>
+              </p>
+              <p>
+                <a href="https://linkedin.com/in/kozlowskiN" target="_blank">
+                  <i class="uil uil-linkedin-alt linkIcons"></i>
+                </a>
+              </p>
+              <p>
+                <!--Email link to nkozlo3@illinois.edu-->
+                <a href="mailto:nkozlo3@illinois.edu">
+                  <i class="uil uil-envelope-send linkIcons"></i>
+                </a>
+              </p>
+            </div>
           </div>
-          <!--========================================= Project 2 ===========================================-->
-          <span style="float: right; position: relative; right: 50%; top: 100%">
+          <div style="width: 50%">
+            <h1 style="position: relative; top: 17%" class="headers">
+              <a id="Home">
+                Hi, I am <br />
+                Neil Kozlowski
+              </a>
+            </h1>
+            <p
+              style="
+                color: rgb(54, 53, 53);
+                position: relative;
+                top: 12%;
+                text-align: left;
+                font-size: larger;
+              "
+            >
+              Computer Scientist
+            </p>
+            <p
+              style="position: relative; top: 8.5%; text-align: left"
+              class="paragraphs"
+            >
+              I am a Junior at University of Illinois at Urbana-Champaign
+              studying<br />
+              to obtain my Bachelor's degree in Computer Science + Philosophy.
+              My<br />
+              greatest strengths are communication, leadership skills, and
+              adaptability<br />
+              which will assist me throughout my professional career. At school
+              I have<br />
+              consistently maintained above a 3.80 GPA while maintaining
+              membership<br />
+              in various clubs as well as participating in different volunteer
+              programs.<br />
+            </p>
+            <a href="#ContactMe">
+              <button
+                style="position: relative; top: 10%"
+                class="cButton contactButton"
+              >
+                Contact Me <i class="uil uil-navigator"></i>
+              </button>
+            </a>
+
+            <p style="color: white; position: relative; top: 27%">
+              <a href="#About">
+                <i class="uil uil-mouse mouseIcon"></i>
+                <span style="font-size: large" class="scrollText"
+                  >Scroll Down</span
+                >
+                <i class="uil uil-arrow-down arrowIcon"></i>
+              </a>
+            </p>
+          </div>
+          <div style="width: 33%">
+            <img
+              src="assets/port1.png"
+              style="position: relative; top: 40%; left: 10%"
+            />
+          </div>
+        </div>
+      </section>
+      <!--===========================================================End Home Section===========================================================-->
+
+      <!--=========================================================== Start About Section===========================================================-->
+      <section id="about">
+        <div style="display: flex">
+          <div style="width: 50%">
+            <h2
+              style="
+                text-align: center;
+                position: relative;
+                left: 75%;
+                top: 40%;
+                font-size: 1cm;
+              "
+              class="headers"
+            >
+              <a id="About"> About Me </a>
+            </h2>
+            <p
+              style="
+                font-size: larger;
+                position: relative;
+                left: 75%;
+                top: 38%;
+                text-align: center;
+              "
+              class="paragraphs"
+            >
+              My Introduction
+            </p>
+          </div>
+          <div style="width: 43%">
+            <p
+              class="paragraphs"
+              style="position: relative; top: 60%; left: 30%"
+            >
+              A committed and hardworking individual, currently a Junior at The
+              University of Illinois at Urbana-Champaign studying to obtain a
+              bachelor's degree in Computer Science + Philosophy. Experience and
+              proficiency with C++, C#, and other OOP languages. As well as data
+              structures and algorithm optimization. Seeking an opportunity to
+              use my knowledge of Computer Science in a professional scenario.
+            </p>
+            <p
+              style="
+                position: relative;
+                top: 60%;
+                left: 30%;
+                font-size: xx-large;
+                color: white;
+              "
+            >
+              <b> 07+ </b>
+              <span
+                style="
+                  float: right;
+                  position: relative;
+                  right: 85%;
+                  font-size: small;
+                  color: rgb(54, 53, 53);
+                "
+                ><br /><br /><br />
+                Projects <br />
+                Completed
+              </span>
+              <span style="float: right; position: relative; right: 30%">
+                <b> 03+ </b>
+                <span
+                  style="
+                    float: right;
+                    position: relative;
+                    right: 40%;
+                    font-size: small;
+                    color: rgb(54, 53, 53);
+                  "
+                  ><br /><br /><br />Years <br />
+                  Experience
+                </span>
+              </span>
+              <span style="float: right; position: relative; right: -15%">
+                <b> 3.80 </b>
+                <span
+                  style="
+                    float: right;
+                    position: relative;
+                    right: 50%;
+                    font-size: small;
+                    color: rgb(54, 53, 53);
+                  "
+                  ><br /><br /><br /><br />
+                  GPA
+                </span>
+              </span>
+            </p>
+            <!--Resume download-->
+            <a href="assets/Resume.pdf" download target="_blank">
+              <button
+                style="position: relative; top: 65%; left: 30%"
+                class="cButton contactButton"
+              >
+                Download Resume <i class="uil uil-download-alt"></i>
+              </button>
+            </a>
+          </div>
+          <div style="width: 23%">
+            <!-- make port2.png 50% smaller-->
+            <img
+              src="assets/port2.png"
+              style="position: relative; top: 62%; right: 270%"
+              height="60%"
+            />
+          </div>
+        </div>
+      </section>
+      <!--===========================================================End About Section===========================================================-->
+
+      <!--===========================================================Start Skills Section===========================================================-->
+      <section id="skills">
+        <div style="display: flex">
+          <div style="width: 50%">
+            <h2
+              style="
+                text-align: center;
+                position: relative;
+                left: 50%;
+                top: 125%;
+                font-size: 1cm;
+              "
+              class="headers"
+            >
+              <a id="Skills"> Skills </a>
+            </h2>
+            <p
+              style="
+                font-size: larger;
+                position: relative;
+                left: 50%;
+                top: 118%;
+                text-align: center;
+              "
+              class="paragraphs"
+            >
+              My Technical Skills
+            </p>
+          </div>
+          <div style="width: 50%">
+            <!--========================================= Backend Skills ===========================================-->
+            <p
+              style="
+                position: relative;
+                top: 195%;
+                right: 30%;
+                font-size: large;
+                color: white;
+              "
+            >
+              <img
+                style="position: relative; right: 15%"
+                class="skillImage"
+                src="https://img.icons8.com/color/48/null/python--v1.png"
+              />
+              <span
+                style="
+                  float: right;
+                  position: relative;
+                  right: 106%;
+                  top: 55px;
+                  font-size: medium;
+                  color: white;
+                "
+                >Python
+              </span>
+
+              <span
+                style="
+                  float: right;
+                  position: relative;
+                  text-align: center;
+                  right: 50%;
+                "
+              >
+                <img
+                  class="skillImage"
+                  src="https://img.icons8.com/fluency/48/null/c-plus-plus-logo.png"
+                />
+                <span
+                  style="
+                    float: right;
+                    position: relative;
+                    right: 45%;
+                    top: 55px;
+                    font-size: medium;
+                    color: white;
+                  "
+                  >C++
+                </span>
+              </span>
+              <span
+                style="
+                  float: right;
+                  position: relative;
+                  text-align: center;
+                  right: 0%;
+                "
+              >
+                <img
+                  class="skillImage"
+                  src="https://img.icons8.com/color/48/null/c-sharp-logo-2.png"
+                />
+                <span
+                  style="
+                    float: right;
+                    position: relative;
+                    right: 45%;
+                    top: 55px;
+                    font-size: medium;
+                    color: white;
+                  "
+                  >C#
+                </span>
+              </span>
+            </p>
+            <!--========================================= Related Skills ===========================================-->
+            <p
+              style="
+                position: relative;
+                top: 225%;
+                right: 30%;
+                font-size: large;
+                color: white;
+              "
+            >
+              <img
+                style="position: relative; right: 15%"
+                class="skillImage"
+                src="https://img.icons8.com/color/48/null/linux--v1.png"
+              />
+              <span
+                style="
+                  float: right;
+                  position: relative;
+                  right: 106%;
+                  top: 55px;
+                  font-size: medium;
+                  color: white;
+                "
+                >Linux
+              </span>
+
+              <span
+                style="
+                  float: right;
+                  position: relative;
+                  text-align: center;
+                  right: 49%;
+                "
+              >
+                <img
+                  class="skillImage"
+                  src="https://img.icons8.com/color/48/null/docker.png"
+                />
+                <span
+                  style="
+                    float: right;
+                    position: relative;
+                    right: 49%;
+                    top: 55px;
+                    font-size: medium;
+                    color: white;
+                  "
+                  >Docker
+                </span>
+              </span>
+              <span
+                style="
+                  float: right;
+                  position: relative;
+                  text-align: center;
+                  right: -10%;
+                "
+              >
+                <img
+                  class="skillImage"
+                  src="https://img.icons8.com/ios-filled/50/null/github.png"
+                />
+                <span
+                  style="
+                    float: right;
+                    position: relative;
+                    right: 48%;
+                    top: 55px;
+                    font-size: medium;
+                    color: white;
+                  "
+                  >GitHub
+                </span>
+              </span>
+            </p>
+            <!--========================================= Frontend Skills ===========================================-->
+            <p
+              style="
+                position: relative;
+                top: 255%;
+                right: 30%;
+                font-size: large;
+                color: white;
+              "
+            >
+              <img
+                style="position: relative; right: 15%"
+                class="skillImage"
+                src="https://img.icons8.com/ios-filled/50/null/javascript-logo.png"
+              />
+              <span
+                style="
+                  float: right;
+                  position: relative;
+                  right: 104%;
+                  top: 55px;
+                  font-size: medium;
+                  color: white;
+                "
+                >JavaScript
+              </span>
+
+              <span
+                style="
+                  float: right;
+                  position: relative;
+                  text-align: center;
+                  right: 48%;
+                "
+              >
+                <img
+                  class="skillImage"
+                  src="https://img.icons8.com/color/48/null/css3.png"
+                />
+                <span
+                  style="
+                    float: right;
+                    position: relative;
+                    right: 49%;
+                    top: 55px;
+                    font-size: medium;
+                    color: white;
+                  "
+                  >CSS
+                </span>
+              </span>
+              <span
+                style="
+                  float: right;
+                  position: relative;
+                  text-align: center;
+                  right: -10%;
+                "
+              >
+                <img
+                  class="skillImage"
+                  src="https://img.icons8.com/fluency/48/null/html-5.png"
+                />
+                <span
+                  style="
+                    float: right;
+                    position: relative;
+                    right: 45%;
+                    top: 55px;
+                    font-size: medium;
+                    color: white;
+                  "
+                  >HTML
+                </span>
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===========================================================End Skills Section===========================================================-->
+
+      <!--===========================================================Start Experience Section===========================================================-->
+      <!--===================================================== Projects portion ===================================================-->
+      <section id="experience">
+        <div style="display: flex">
+          <div style="width: 50%">
+            <h2 id="experienceHeader" class="headers">
+              <a id="Experience"> Experience </a>
+            </h2>
+            <button onclick="projectsToggle()" id="projectButton">
+              Projects
+            </button>
+            <button onclick="cyberToggle()" id="cyberButton">
+              Cybersecurity
+            </button>
+          </div>
+          <!--========================================= Project 1 ===========================================-->
+          <div style="width: 50%" id="projectDiv">
             <a
-              href="https://github.com/nkozlo3/CraftingTamingGame.git"
+              href="https://github.com/nkozlo3/LinkedListLuvrs-OpenFlights-Graph-Algorithm.git"
+              target="_blank"
+            >
+              <img src="assets/open.png" class="projectImageButton project1" />
+            </a>
+            <div class="bottomText project1-text">
+              Comprehensive data analysis using graph algorithms <br />
+              (Dijkstra, SCC, DFS, visuals) written in C++
+            </div>
+            <!--========================================= Project 2 ===========================================-->
+            <span
+              style="float: right; position: relative; right: 25%; top: 80%"
+            >
+              <a
+                href="https://github.com/nkozlo3/CraftingTamingGame.git"
+                target="_blank"
+              >
+                <img
+                  src="assets/crafting.png"
+                  class="projectImageButton project2"
+                />
+              </a>
+              <div class="bottomText project2-text">
+                Crafting and Taming Game <br />
+                (C#, Unity)
+              </div>
+            </span>
+
+            <!--========================================= Project 3 ===========================================-->
+            <a
+              href="https://github.com/nkozlo3/ChromePasswordManagerExtension.git"
               target="_blank"
             >
               <img
-                src="assets/crafting.png"
-                class="projectImageButton project2"
+                src="assets/chrome.png"
+                class="projectImageButton project3"
               />
             </a>
-            <div class="bottomText project2-text">
-              Crafting and Taming Game <br />
-              (C#, Unity)
+            <div class="bottomText project3-text">
+              Chrome Password Manager Extension <br />
+              (JavaScript and HTML)
             </div>
-          </span>
 
-          <!--========================================= Project 3 ===========================================-->
-          <a
-            href="https://github.com/nkozlo3/ChromePasswordManagerExtension.git"
-            target="_blank"
-          >
-            <img src="assets/chrome.png" class="projectImageButton project3" />
-          </a>
-          <div class="bottomText project3-text">
-            Chrome Password Manager Extension <br />
-            (JavaScript and HTML)
+            <!--========================================= Project 4 ===========================================-->
+            <span
+              style="float: right; position: relative; right: 25%; top: 2%"
+            >
+              <a
+                href="https://github.com/nkozlo3/ImageManip.git"
+                target="_blank"
+              >
+                <img
+                  src="assets/image.png"
+                  class="projectImageButton project4"
+                />
+              </a>
+              <div class="bottomText project4-text">
+                Image Manipulation <br />
+                (Python, Jupyter Notebook)
+              </div>
+            </span>
           </div>
-
-          <!--========================================= Project 4 ===========================================-->
-          <span style="float: right; position: relative; right: 50%; top: 32%">
-            <a href="https://github.com/nkozlo3/ImageManip.git" target="_blank">
-              <img src="assets/image.png" class="projectImageButton project4" />
+          <!--========================================= Cybersecurity portion ===========================================-->
+          <div style="width: 50%" id="cyberDiv">
+            <p class="paragraphs hackathonsTitle">Hackathons</p>
+            <a href="https://fallctf.sigpwny.com/" target="_blank">
+              <button class="cButton contactButton fallCTFButton">
+                Fall CTF <br />
+                24th place
+              </button>
             </a>
-            <div class="bottomText project4-text">
-              Image Manipulation <br />
-              (Python, Jupyter Notebook)
-            </div>
-          </span>
+            <a href="https://www.csaw.io/ctf" target="_blank">
+              <button class="cButton contactButton CSAWButton">
+                CSAW Quarterfinals <br />
+                8th place
+              </button>
+            </a>
+            <a href="https://ctf.osucyber.club/" target="_blank">
+              <button class="cButton contactButton buckeyeCTF">
+                BuckeyeCTF <br />
+                Placed
+              </button>
+            </a>
+          </div>
         </div>
-        <!--========================================= Cybersecurity portion ===========================================-->
-        <div style="width: 50%" id="cyberDiv">
-          <p class="paragraphs hackathonsTitle">Hackathons</p>
-          <a href="https://fallctf.sigpwny.com/" target="_blank">
-            <button class="cButton contactButton fallCTFButton">Fall CTF <br/> 24th place </button>
-          </a>
-          <a href="https://www.csaw.io/ctf" target="_blank">
-            <button class="cButton contactButton CSAWButton">CSAW Quarterfinals <br/> 8th place </button>
-          </a>
-          <a href="https://ctf.osucyber.club/" target="_blank">
-            <button class="cButton contactButton buckeyeCTF">BuckeyeCTF <br/> Placed </button>
-          </a>
+      </section>
 
+      <!--===========================================================End Projects Section===========================================================-->
+
+      <!--===========================================================Start Contact Section===========================================================-->
+
+      <section id="contact">
+        <div style="display: flex">
+          <div style="width: 50%">
+            <h2 id="contactHeader">
+              <a id="ContactMe"> Contact </a>
+            </h2>
+            <p id="contactParagraph">Contact Me</p>
+          </div>
+          <form
+            action="https://formsubmit.co/nkozlo3@illinois.edu"
+            method="POST"
+            style="width: 50%"
+          >
+            <!--Input Box for name-->
+            <input
+              type="text"
+              id="contactName"
+              name="name"
+              placeholder="Name"
+              text-align="center"
+            />
+            <!--Input Box for email-->
+            <input
+              type="text"
+              id="contactEmail"
+              name="email"
+              placeholder="Email"
+              text-align="center"
+              required
+            />
+            <!--Input Box for message-->
+            <input
+              type="text"
+              id="contactMessage"
+              name="message"
+              placeholder="Message"
+              text-align="center"
+              required
+            />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Email from your website!! WHOOOOO!"
+            />
+            <!--Submit Button-->
+            <button id="contactSubmitButton" type="submit" value="Send Email">
+              Send Message <i class="uil uil-plane-fly"></i>
+            </button>
+          </form>
+          <div style="width: 50%">
+            <!--Email me button-->
+            <a
+              id="emailMeButton"
+              href="mailto:nkozlo3@illinois.edu"
+              target="_blank"
+              >Email <i class="uil uil-envelope"></i
+            ></a>
+            <!--Call me button-->
+            <a id="callMeButton" href="tel:630-888-8888" target="_blank"
+              >Call <i class="uil uil-phone"></i
+            ></a>
+            <!--Location button-->
+            <a
+              id="locateMeButton"
+              href="https://www.google.com/maps/place/Urbana,+IL/@40.1153287,-88.2280658,13z/data=!3m1!4b1!4m5!3m4!1s0x880cd7968484428f:0xf48dcbad390c6541!8m2!3d40.1105875!4d-88.2072697"
+              target="_blank"
+              >Urbana, IL <i class="uil uil-map-marker"></i
+            ></a>
+
+            <!--placeholder-->
+            <p id="contactMePlaceholder" class="paragraphs placeHolderButton">
+              Hi! :)
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!--===========================================================End Projects Section===========================================================-->
-
-    <!--===========================================================Start Contact Section===========================================================-->
-
-    <section id="contact">
-      <div style="display: flex">
-        <div style="width: 50%">
-          <h2 id="contactHeader">
-            <a id="ContactMe"> Contact </a>
-          </h2>
-          <p id="contactParagraph">Contact Me</p>
-        </div>
-        <form
-          action="https://formsubmit.co/nkozlo3@illinois.edu"
-          method="POST"
-          style="width: 50%"
-        >
-          <!--Input Box for name-->
-          <input
-            type="text"
-            id="contactName"
-            name="name"
-            placeholder="Name"
-            text-align="center"
-          />
-          <!--Input Box for email-->
-          <input
-            type="text"
-            id="contactEmail"
-            name="email"
-            placeholder="Email"
-            text-align="center"
-            required
-          />
-          <!--Input Box for message-->
-          <input
-            type="text"
-            id="contactMessage"
-            name="message"
-            placeholder="Message"
-            text-align="center"
-            required
-          />
-          <input
-            type="hidden"
-            name="_subject"
-            value="Email from your website!! WHOOOOO!"
-          />
-          <!--Submit Button-->
-          <button id="contactSubmitButton" type="submit" value="Send Email">
-            Send Message <i class="uil uil-plane-fly"></i>
-          </button>
-        </form>
-        <div style="width: 50%">
-          <!--Email me button-->
-          <a
-            id="emailMeButton"
-            href="mailto:nkozlo3@illinois.edu"
-            target="_blank"
-            >Email <i class="uil uil-envelope"></i
-          ></a>
-          <!--Call me button-->
-          <a id="callMeButton" href="tel:630-888-8888" target="_blank"
-            >Call <i class="uil uil-phone"></i
-          ></a>
-          <!--Location button-->
-          <a
-            id="locateMeButton"
-            href="https://www.google.com/maps/place/Urbana,+IL/@40.1153287,-88.2280658,13z/data=!3m1!4b1!4m5!3m4!1s0x880cd7968484428f:0xf48dcbad390c6541!8m2!3d40.1105875!4d-88.2072697"
-            target="_blank"
-            >Urbana, IL <i class="uil uil-map-marker"></i
-          ></a>
-
-          <!--placeholder-->
-          <p id="contactMePlaceholder" class="paragraphs placeHolderButton">
-            Hi! :)
-          </p>
-        </div>
-      </div>
-    </section>
-  </body>
+      </section>
+    </body>
+  </div>
 </html>

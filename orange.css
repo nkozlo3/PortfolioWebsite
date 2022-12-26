@@ -169,39 +169,42 @@ a:active {
   text-align: center;
   position: relative;
   left: 50%;
-  top: 75%;
+  top: 60%;
   font-size: 1cm;
 }
 .projectHeader-afterCyberToggle {
   text-align: center;
   position: relative;
   left: 50%;
-  top: 310%;
+  top: 225%;
+  /*-100*/
   font-size: 1cm;
-}
-.projectButtons {
-  font-size: larger;
-  position: relative;
-  left: 75%;
-  top: 73%;
-  text-align: center;
-  width: 5cm;
-}
-.hackathonsTitle {
-  font-size: larger;
-  position: relative;
-  right: 83%;
-  top: 400%;
-  text-align: center;
 }
 .projectButtons-afterCyberToggle {
   font-size: larger;
   position: relative;
-  left: 75%;
-  top: 308%;
+  left: 60%;
+  top: 225%;
   text-align: center;
   width: 5cm;
 }
+
+.hackathonsTitle {
+  font-size: larger;
+  position: relative;
+  right: 83%;
+  top: 285%;
+  text-align: center;
+}
+.projectButtons {
+  font-size: larger;
+  position: relative;
+  left: 60%;
+  top: 60%;
+  text-align: center;
+  width: 5cm;
+}
+
 .project1 {
   position: relative;
   text-align: center;
@@ -255,21 +258,6 @@ a:active {
   right: 7%;
 }
 
-.projectHeader {
-  text-align: center;
-  position: relative;
-  left: 50%;
-  top: 75%;
-  font-size: 1cm;
-}
-.projectButtons {
-  font-size: larger;
-  position: relative;
-  left: 75%;
-  top: 73%;
-  text-align: center;
-  width: 5cm;
-}
 .projectButton-project {
   background-color: rgb(0, 59, 223);
   border: 2px solid rgb(67, 206, 252);
@@ -282,15 +270,15 @@ a:active {
 .project1 {
   position: relative;
   text-align: center;
-  top: 100%;
-  right: 50%;
+  top: 77%;
+  right: 75%;
   width: 325px;
   height: 250px;
 }
 .project1-text {
   position: relative;
-  top: 100%;
-  right: 77%;
+  top: 77%;
+  right: 89%;
 }
 .project2 {
   position: relative;
@@ -308,15 +296,15 @@ a:active {
 .project3 {
   position: relative;
   text-align: center;
-  top: 100%;
-  right: 50%;
+  top: 55%;
+  right: 75%;
   width: 325px;
   height: 250px;
 }
 .project3-text {
   position: relative;
-  top: 100%;
-  right: 57%;
+  top: 55%;
+  right: 89%;
 }
 .project4 {
   position: relative;
@@ -335,7 +323,7 @@ a:active {
   text-align: center;
   position: relative;
   left: 122%;
-  top: 250%;
+  top: 150%;
   font-size: 1cm;
 }
 
@@ -343,7 +331,7 @@ a:active {
   text-align: center;
   position: relative;
   left: 122%;
-  top: 400%;
+  top: 350%;
   font-size: 1cm;
 }
 
@@ -351,7 +339,7 @@ a:active {
   font-size: larger;
   position: relative;
   left: 122%;
-  top: 245%;
+  top: 145%;
   text-align: center;
 }
 
@@ -359,37 +347,38 @@ a:active {
   font-size: larger;
   position: relative;
   left: 122%;
-  top: 395%;
+  top: 350%;
   text-align: center;
 }
+
 
 .contactInputNameBox {
   position: relative;
   right: 15%;
-  top: 325%;
+  top: 200%;
 }
 
 .contactInputNameBox-afterCyberToggle {
   position: relative;
   right: 15%;
-  top: 475%;
+  top: 400%;
 }
 
 .contactInputEmailBox {
   position: relative;
   right: 15%;
-  top: 325%;
+  top: 200%;
 }
 
 .contactInputEmailBox-afterCyberToggle {
   position: relative;
   right: 15%;
-  top: 475%;
+  top: 400%;
 }
 .contactInputMessageBox {
   position: relative;
   right: 15%;
-  top: 325%;
+  top: 200%;
   width: 609px;
   height: 150px;
 }
@@ -397,58 +386,58 @@ a:active {
 .contactInputMessageBox-afterCyberToggle {
   position: relative;
   right: 15%;
-  top: 475%;
+  top: 400%;
   width: 609px;
   height: 150px;
 }
 .contactSubmitButton {
   position: relative;
   right: 15%;
-  top: 325%;
+  top: 200%;
 }
 
 .contactSubmitButton-afterCyberToggle {
   position: relative;
   right: 15%;
-  top: 475%;
+  top: 400%;
 }
 .mailMeButton {
   position: relative;
-  right: 15%;
-  top: 325%;
+  right: -28%;
+  top: 208%;
   width: 2.5cm;
 }
 
 .mailMeButton-afterCyberToggle {
   position: relative;
-  right: 15%;
-  top: 475%;
+  right: -28%;
+  top: 410%;
   width: 2.5cm;
 }
 .callMeButton {
   position: relative;
-  right: 53%;
-  top: 350%;
+  right: -28%;
+  top: 210%;
   width: 2.5cm;
 }
 
 .callMeButton-afterCyberToggle {
   position: relative;
-  right: 53%;
-  top: 500%;
+  right: -28%;
+  top: 413%;
   width: 2.5cm;
 }
 .locateMeButton {
   position: relative;
-  right: 15%;
-  top: 355%;
+  right: -28%;
+  top: 213%;
   width: 2.5cm;
 }
 
 .locateMeButton-afterCyberToggle {
   position: relative;
-  right: 15%;
-  top: 505%;
+  right: -28%;
+  top: 416%;
   width: 2.5cm;
 }
 .placeHolderButton {
@@ -466,19 +455,19 @@ a:active {
 }
 .fallCTFButton {
   position: relative;
-  right: 40%;
-  top: 405%;
+  right: 50%;
+  top: 285%;
   width: 6.5cm;
 }
 .CSAWButton {
   position: relative;
-  right: 74%;
-  top: 455%;
+  right: 50%;
+  top: 288%;
   width: 6.5cm;
 }
 .buckeyeCTF {
   position: relative;
-  right: 40%;
-  top: 470%;
+  right: 50%;
+  top: 291%;
   width: 6.5cm;
 }
