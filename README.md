@@ -25,12 +25,6 @@
 ## Experience_Cyber Page Orange:
 ![experience_cyber_orange](https://user-images.githubusercontent.com/80439868/209493122-ecf2048f-7216-43be-ab8a-5999456ee90d.png)
 
-## Projects Page Blue:
-![projectsBlue](https://user-images.githubusercontent.com/80439868/209462578-8c0e44b5-ef89-466b-8d57-95a3a22b62c5.png)
-
-## Projects Page Orange:
-![projectsOrange](https://user-images.githubusercontent.com/80439868/209462570-2a0f4c09-3eed-4836-8efc-df81d80e4f6e.png)
-
 ## ContactMe Page Blue:
 ![contactMeBlue](https://user-images.githubusercontent.com/80439868/209462577-9e85a42d-f53c-430f-9e17-13ef1cd6648d.png)
 
