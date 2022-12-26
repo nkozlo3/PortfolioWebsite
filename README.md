@@ -13,11 +13,17 @@
 ## About Page Orange:
 ![aboutOrange](https://user-images.githubusercontent.com/80439868/209462575-c410cdfd-da3d-45cb-9343-199c93b96974.png)
 
-## Skills Page Blue:
-![skillsBlue](https://user-images.githubusercontent.com/80439868/209462573-0704728a-f81e-4fe5-a39c-73f4b4e9dfc9.png)
+## Experience_Projects Page Blue:
+![experience_projects_blue](https://user-images.githubusercontent.com/80439868/209493053-204efdee-306e-49c5-bb69-037a04699c8a.png)
 
-## Skills Page Orange:
-![skillsOrange](https://user-images.githubusercontent.com/80439868/209462571-6cbd1ae8-85a2-4247-bcc9-66a92ec9f728.png)
+## Experience_Projects Page Orange:
+![experience_projects_orange](https://user-images.githubusercontent.com/80439868/209493079-b7dbc609-e238-4c9a-836b-a05b36f0254f.png)
+
+## Experience_Cyber Page Blue:
+![experience_cyber_blue](https://user-images.githubusercontent.com/80439868/209493089-8627381f-54ae-4d53-9350-aaaa97585d99.png)
+
+## Experience_Cyber Page Orange:
+![experience_cyber_orange](https://user-images.githubusercontent.com/80439868/209493122-ecf2048f-7216-43be-ab8a-5999456ee90d.png)
 
 ## Projects Page Blue:
 ![projectsBlue](https://user-images.githubusercontent.com/80439868/209462578-8c0e44b5-ef89-466b-8d57-95a3a22b62c5.png)
