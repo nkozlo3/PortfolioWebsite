@@ -29,6 +29,172 @@
         oldLink.setAttribute("href", newHref);
       }
     </script>
+    <script>
+      // function called on page load
+      window.onload = function () {
+        var expHeader = document.getElementById("experienceHeader");
+        expHeader.className = "headers projectHeader";
+
+        var cyberButton = document.getElementById("cyberButton");
+        cyberButton.className = "cButton contactButton projectButtons";
+
+        var projectButton = document.getElementById("projectButton");
+        projectButton.className =
+          "cButton contactButton projectButtons projectButton-project";
+
+        var contactHeader = document.getElementById("contactHeader");
+        contactHeader.className = "headers contactHeader";
+
+        var contactParagraph = document.getElementById("contactParagraph");
+        contactParagraph.className = "paragraphs contactParagraph";
+
+        var contactName = document.getElementById("contactName");
+        contactName.className = "inputBox contactInputNameBox";
+
+        var contactEmail = document.getElementById("contactEmail");
+        contactEmail.className = "inputBox contactInputEmailBox";
+
+        var contactMessage = document.getElementById("contactMessage");
+        contactMessage.className = "inputBox contactInputMessageBox";
+
+        var contactSubmitButton = document.getElementById(
+          "contactSubmitButton"
+        );
+        contactSubmitButton.className =
+          "cButton contactButton contactSubmitButton";
+
+        var emailMeButton = document.getElementById("emailMeButton");
+        emailMeButton.className = "cButton contactButton mailMeButton";
+
+        var callMeButton = document.getElementById("callMeButton");
+        callMeButton.className = "cButton contactButton callMeButton";
+
+        var locateMeButton = document.getElementById("locateMeButton");
+        locateMeButton.className = "cButton contactButton locateMeButton";
+
+        var contactMePlaceholder = document.getElementById(
+          "contactMePlaceholder"
+        );
+        contactMePlaceholder.className = "paragraphs placeHolderButton";
+
+        var project = document.getElementById("projectDiv");
+        var cyber = document.getElementById("cyberDiv");
+        project.style.display = "block";
+        cyber.style.display = "none";
+      };
+
+      function projectsToggle() {
+        var expHeader = document.getElementById("experienceHeader");
+        expHeader.className = "headers projectHeader";
+
+        var cyberButton = document.getElementById("cyberButton");
+        cyberButton.className = "cButton contactButton projectButtons";
+
+        var projectButton = document.getElementById("projectButton");
+        projectButton.className =
+          "cButton contactButton projectButtons projectButton-project";
+
+        var contactHeader = document.getElementById("contactHeader");
+        contactHeader.className = "headers contactHeader";
+
+        var contactParagraph = document.getElementById("contactParagraph");
+        contactParagraph.className = "paragraphs contactParagraph";
+
+        var contactName = document.getElementById("contactName");
+        contactName.className = "inputBox contactInputNameBox";
+
+        var contactEmail = document.getElementById("contactEmail");
+        contactEmail.className = "inputBox contactInputEmailBox";
+
+        var contactMessage = document.getElementById("contactMessage");
+        contactMessage.className = "inputBox contactInputMessageBox";
+
+        var contactSubmitButton = document.getElementById(
+          "contactSubmitButton"
+        );
+        contactSubmitButton.className =
+          "cButton contactButton contactSubmitButton";
+
+        var emailMeButton = document.getElementById("emailMeButton");
+        emailMeButton.className = "cButton contactButton mailMeButton";
+
+        var callMeButton = document.getElementById("callMeButton");
+        callMeButton.className = "cButton contactButton callMeButton";
+
+        var locateMeButton = document.getElementById("locateMeButton");
+        locateMeButton.className = "cButton contactButton locateMeButton";
+
+        var contactMePlaceholder = document.getElementById(
+          "contactMePlaceholder"
+        );
+        contactMePlaceholder.className = "paragraphs placeHolderButton";
+
+        var project = document.getElementById("projectDiv");
+        var cyber = document.getElementById("cyberDiv");
+        project.style.display = "block";
+        cyber.style.display = "none";
+      }
+      function cyberToggle() {
+        var expHeader = document.getElementById("experienceHeader");
+        expHeader.className = "headers projectHeader-afterCyberToggle";
+
+        var cyberButton = document.getElementById("cyberButton");
+        cyberButton.className =
+          "cButton contactButton projectButtons-afterCyberToggle projectButton-cyber";
+
+        var projectButton = document.getElementById("projectButton");
+        projectButton.className =
+          "cButton contactButton projectButtons-afterCyberToggle";
+
+        var contactHeader = document.getElementById("contactHeader");
+        contactHeader.className = "headers contactHeader-afterCyberToggle";
+
+        var contactParagraph = document.getElementById("contactParagraph");
+        contactParagraph.className =
+          "paragraphs contactParagraph-afterCyberToggle";
+
+        var contactName = document.getElementById("contactName");
+        contactName.className = "inputBox contactInputNameBox-afterCyberToggle";
+
+        var contactEmail = document.getElementById("contactEmail");
+        contactEmail.className =
+          "inputBox contactInputEmailBox-afterCyberToggle";
+
+        var contactMessage = document.getElementById("contactMessage");
+        contactMessage.className =
+          "inputBox contactInputMessageBox-afterCyberToggle";
+
+        var contactSubmitButton = document.getElementById(
+          "contactSubmitButton"
+        );
+
+        contactSubmitButton.className =
+          "cButton contactButton contactSubmitButton-afterCyberToggle";
+
+        var emailMeButton = document.getElementById("emailMeButton");
+        emailMeButton.className =
+          "cButton contactButton mailMeButton-afterCyberToggle";
+
+        var callMeButton = document.getElementById("callMeButton");
+        callMeButton.className =
+          "cButton contactButton callMeButton-afterCyberToggle";
+
+        var locateMeButton = document.getElementById("locateMeButton");
+        locateMeButton.className =
+          "cButton contactButton locateMeButton-afterCyberToggle";
+
+        var contactMePlaceholder = document.getElementById(
+          "contactMePlaceholder"
+        );
+        contactMePlaceholder.className =
+          "paragraphs placeHolderButton-afterCyberToggle";
+
+        var project = document.getElementById("projectDiv");
+        var cyber = document.getElementById("cyberDiv");
+        cyber.style.display = "block";
+        project.style.display = "none";
+      }
+    </script>
     <!--===========================================================NavBar Section===========================================================-->
     <section id="navbar">
       <div class="navbar">
@@ -51,7 +217,7 @@
             <a href="#ContactMe"> Contact Me </a>
           </span>
           <span style="float: right; position: relative; right: 15%">
-            <a href="#Projects"> Projects </a>
+            <a href="#Experience"> Experience </a>
           </span>
           <span style="float: right; position: relative; right: 16.5%">
             <a href="#Skills"> Skills </a>
@@ -187,11 +353,10 @@
           <p class="paragraphs" style="position: relative; top: 60%; left: 30%">
             A committed and hardworking individual, currently a Junior at The
             University of Illinois at Urbana-Champaign studying to obtain a
-            bachelor's degree in Computer Science + Philosophy. Proof of
-            experience and proficiency working C++, C#, and other OOP languages.
-            As well as data structures and algorithm optimization. Seeking an
-            opportunity to use my knowledge of Computer Science in a
-            professional scenario. Willing to relocation.
+            bachelor's degree in Computer Science + Philosophy. Experience and
+            proficiency with C++, C#, and other OOP languages. As well as data
+            structures and algorithm optimization. Seeking an opportunity to use
+            my knowledge of Computer Science in a professional scenario.
           </p>
           <p
             style="
@@ -527,59 +692,30 @@
 
     <!--===========================================================End Skills Section===========================================================-->
 
-    <!--===========================================================Start Projects Section===========================================================-->
-
-    <section id="projects">
+    <!--===========================================================Start Experience Section===========================================================-->
+    <!--===================================================== Projects portion ===================================================-->
+    <section id="experience">
       <div style="display: flex">
         <div style="width: 50%">
-          <h2
-            style="
-              text-align: center;
-              position: relative;
-              left: 50%;
-              top: 75%;
-              font-size: 1cm;
-            "
-            class="headers"
-          >
-            <a id="Projects"> Projects </a>
+          <h2 id="experienceHeader" class="headers">
+            <a id="Experience"> Experience </a>
           </h2>
-          <p
-            style="
-              font-size: larger;
-              position: relative;
-              left: 50%;
-              top: 73%;
-              text-align: center;
-            "
-            class="paragraphs"
-          >
-            My Projects
-          </p>
+          <button onclick="projectsToggle()" id="projectButton">
+            Projects
+          </button>
+          <button onclick="cyberToggle()" id="cyberButton">
+            Cybersecurity
+          </button>
         </div>
         <!--========================================= Project 1 ===========================================-->
-        <div style="width: 50%">
+        <div style="width: 50%" id="projectDiv">
           <a
             href="https://github.com/nkozlo3/LinkedListLuvrs-OpenFlights-Graph-Algorithm.git"
             target="_blank"
           >
-            <img
-              src="assets/open.png"
-              style="
-                position: relative;
-                text-align: center;
-                top: 100%;
-                right: 50%;
-                width: 325px;
-                height: 250px;
-              "
-              class="projectImageButton"
-            />
+            <img src="assets/open.png" class="projectImageButton project1" />
           </a>
-          <div
-            style="position: relative; top: 100%; right: 77%"
-            class="bottomText"
-          >
+          <div class="bottomText project1-text">
             Comprehensive data analysis using graph algorithms <br />
             (Dijkstra, SCC, DFS, visuals) written in C++
           </div>
@@ -591,21 +727,10 @@
             >
               <img
                 src="assets/crafting.png"
-                style="
-                  position: relative;
-                  text-align: center;
-                  top: 100%;
-                  right: 0%;
-                  width: 325px;
-                  height: 250px;
-                "
-                class="projectImageButton"
+                class="projectImageButton project2"
               />
             </a>
-            <div
-              style="position: relative; top: 100%; right: 7%"
-              class="bottomText"
-            >
+            <div class="bottomText project2-text">
               Crafting and Taming Game <br />
               (C#, Unity)
             </div>
@@ -616,51 +741,37 @@
             href="https://github.com/nkozlo3/ChromePasswordManagerExtension.git"
             target="_blank"
           >
-            <img
-              src="assets/chrome.png"
-              style="
-                position: relative;
-                text-align: center;
-                top: 100%;
-                right: 50%;
-                width: 325px;
-                height: 250px;
-              "
-              class="projectImageButton"
-            />
+            <img src="assets/chrome.png" class="projectImageButton project3" />
           </a>
-          <div
-            style="position: relative; top: 100%; right: 57%"
-            class="bottomText"
-          >
+          <div class="bottomText project3-text">
             Chrome Password Manager Extension <br />
-            (JavaScript, HTML, CSS)
+            (JavaScript and HTML)
           </div>
 
           <!--========================================= Project 4 ===========================================-->
           <span style="float: right; position: relative; right: 50%; top: 32%">
             <a href="https://github.com/nkozlo3/ImageManip.git" target="_blank">
-              <img
-                src="assets/image.png"
-                style="
-                  position: relative;
-                  text-align: center;
-                  top: 100%;
-                  right: 0%;
-                  width: 325px;
-                  height: 250px;
-                "
-                class="projectImageButton"
-              />
+              <img src="assets/image.png" class="projectImageButton project4" />
             </a>
-            <div
-              style="position: relative; top: 100%; right: 7%"
-              class="bottomText"
-            >
+            <div class="bottomText project4-text">
               Image Manipulation <br />
               (Python, Jupyter Notebook)
             </div>
           </span>
+        </div>
+        <!--========================================= Cybersecurity portion ===========================================-->
+        <div style="width: 50%" id="cyberDiv">
+          <p class="paragraphs hackathonsTitle">Hackathons</p>
+          <a href="https://fallctf.sigpwny.com/" target="_blank">
+            <button class="cButton contactButton fallCTFButton">Fall CTF <br/> 24th place </button>
+          </a>
+          <a href="https://www.csaw.io/ctf" target="_blank">
+            <button class="cButton contactButton CSAWButton">CSAW Quarterfinals <br/> 8th place </button>
+          </a>
+          <a href="https://ctf.osucyber.club/" target="_blank">
+            <button class="cButton contactButton buckeyeCTF">BuckeyeCTF <br/> Placed </button>
+          </a>
+
         </div>
       </div>
     </section>
@@ -672,30 +783,10 @@
     <section id="contact">
       <div style="display: flex">
         <div style="width: 50%">
-          <h2
-            style="
-              text-align: center;
-              position: relative;
-              left: 122%;
-              top: 250%;
-              font-size: 1cm;
-            "
-            class="headers"
-          >
+          <h2 id="contactHeader">
             <a id="ContactMe"> Contact </a>
           </h2>
-          <p
-            style="
-              font-size: larger;
-              position: relative;
-              left: 122%;
-              top: 245%;
-              text-align: center;
-            "
-            class="paragraphs"
-          >
-            Contact Me
-          </p>
+          <p id="contactParagraph">Contact Me</p>
         </div>
         <form
           action="https://formsubmit.co/nkozlo3@illinois.edu"
@@ -705,38 +796,26 @@
           <!--Input Box for name-->
           <input
             type="text"
-            id="name"
+            id="contactName"
             name="name"
             placeholder="Name"
-            style="position: relative; right: 15%; top: 325%"
-            class="inputBox"
             text-align="center"
           />
           <!--Input Box for email-->
           <input
             type="text"
-            id="email"
+            id="contactEmail"
             name="email"
             placeholder="Email"
-            style="position: relative; right: 15%; top: 325%"
-            class="inputBox"
             text-align="center"
             required
           />
           <!--Input Box for message-->
           <input
             type="text"
-            id="message"
+            id="contactMessage"
             name="message"
             placeholder="Message"
-            class="inputBox"
-            style="
-              position: relative;
-              right: 15%;
-              top: 325%;
-              width: 609px;
-              height: 150px;
-            "
             text-align="center"
             required
           />
@@ -746,51 +825,32 @@
             value="Email from your website!! WHOOOOO!"
           />
           <!--Submit Button-->
-          <button
-            type="submit"
-            style="position: relative; right: 15%; top: 325%"
-            class="cButton contactButton"
-            value="Send Email"
-          >
+          <button id="contactSubmitButton" type="submit" value="Send Email">
             Send Message <i class="uil uil-plane-fly"></i>
           </button>
         </form>
         <div style="width: 50%">
           <!--Email me button-->
           <a
+            id="emailMeButton"
             href="mailto:nkozlo3@illinois.edu"
             target="_blank"
-            style="position: relative; right: 15%; top: 325%; width: 2.5cm"
-            class="cButton contactButton"
             >Email <i class="uil uil-envelope"></i
           ></a>
           <!--Call me button-->
-          <a
-            href="tel:630-888-8888"
-            target="_blank"
-            style="position: relative; right: 53%; top: 350%; width: 2.5cm"
-            class="cButton contactButton"
+          <a id="callMeButton" href="tel:630-888-8888" target="_blank"
             >Call <i class="uil uil-phone"></i
           ></a>
           <!--Location button-->
           <a
+            id="locateMeButton"
             href="https://www.google.com/maps/place/Urbana,+IL/@40.1153287,-88.2280658,13z/data=!3m1!4b1!4m5!3m4!1s0x880cd7968484428f:0xf48dcbad390c6541!8m2!3d40.1105875!4d-88.2072697"
             target="_blank"
-            style="position: relative; right: 15%; top: 355%; width: 2.5cm"
-            class="cButton contactButton"
             >Urbana, IL <i class="uil uil-map-marker"></i
           ></a>
 
           <!--placeholder-->
-          <p
-            style="
-              color: transparent;
-              position: relative;
-              top: 450%;
-              text-align: center;
-            "
-            class="paragraphs"
-          >
+          <p id="contactMePlaceholder" class="paragraphs placeHolderButton">
             Hi! :)
           </p>
         </div>

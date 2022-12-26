@@ -163,3 +163,254 @@ a:active {
   border: 1px solid rgb(240, 128, 128);
   background-color: transparent;
 }
+.projectHeader {
+  text-align: center;
+  position: relative;
+  left: 50%;
+  top: 75%;
+  font-size: 1cm;
+}
+.projectHeader-afterCyberToggle {
+  text-align: center;
+  position: relative;
+  left: 50%;
+  top: 310%;
+  /*-100*/
+  font-size: 1cm;
+}
+.projectButtons-afterCyberToggle {
+  font-size: larger;
+  position: relative;
+  left: 75%;
+  top: 308%;
+  text-align: center;
+  width: 5cm;
+}
+
+.hackathonsTitle {
+  font-size: larger;
+  position: relative;
+  right: 83%;
+  top: 400%;
+  text-align: center;
+}
+.projectButtons {
+  font-size: larger;
+  position: relative;
+  left: 75%;
+  top: 73%;
+  text-align: center;
+  width: 5cm;
+}
+.projectButton-project {
+  background-color: rgb(240, 128, 128);
+  border: 2px solid rgb(0, 59, 223);
+}
+.projectButton-cyber {
+  background-color: rgb(240, 128, 128);
+  border: 2px solid rgb(0, 59, 223);
+}
+
+.project1 {
+  position: relative;
+  text-align: center;
+  top: 100%;
+  right: 50%;
+  width: 325px;
+  height: 250px;
+}
+.project1-text {
+  position: relative;
+  top: 100%;
+  right: 77%;
+}
+.project2 {
+  position: relative;
+  text-align: center;
+  top: 100%;
+  right: 0%;
+  width: 325px;
+  height: 250px;
+}
+.project2-text {
+  position: relative;
+  top: 100%;
+  right: 7%;
+}
+.project3 {
+  position: relative;
+  text-align: center;
+  top: 100%;
+  right: 50%;
+  width: 325px;
+  height: 250px;
+}
+.project3-text {
+  position: relative;
+  top: 100%;
+  right: 57%;
+}
+.project4 {
+  position: relative;
+  text-align: center;
+  top: 100%;
+  right: 0%;
+  width: 325px;
+  height: 250px;
+}
+.project4-text {
+  position: relative;
+  top: 100%;
+  right: 7%;
+}
+.contactHeader {
+  text-align: center;
+  position: relative;
+  left: 122%;
+  top: 250%;
+  font-size: 1cm;
+}
+
+.contactHeader-afterCyberToggle {
+  text-align: center;
+  position: relative;
+  left: 122%;
+  top: 400%;
+  font-size: 1cm;
+}
+
+.contactParagraph {
+  font-size: larger;
+  position: relative;
+  left: 122%;
+  top: 245%;
+  text-align: center;
+}
+
+.contactParagraph-afterCyberToggle {
+  font-size: larger;
+  position: relative;
+  left: 122%;
+  top: 395%;
+  text-align: center;
+}
+
+.contactInputNameBox {
+  position: relative;
+  right: 15%;
+  top: 325%;
+}
+
+.contactInputNameBox-afterCyberToggle {
+  position: relative;
+  right: 15%;
+  top: 475%;
+}
+
+.contactInputEmailBox {
+  position: relative;
+  right: 15%;
+  top: 325%;
+}
+
+.contactInputEmailBox-afterCyberToggle {
+  position: relative;
+  right: 15%;
+  top: 475%;
+}
+.contactInputMessageBox {
+  position: relative;
+  right: 15%;
+  top: 325%;
+  width: 609px;
+  height: 150px;
+}
+
+.contactInputMessageBox-afterCyberToggle {
+  position: relative;
+  right: 15%;
+  top: 475%;
+  width: 609px;
+  height: 150px;
+}
+.contactSubmitButton {
+  position: relative;
+  right: 15%;
+  top: 325%;
+}
+
+.contactSubmitButton-afterCyberToggle {
+  position: relative;
+  right: 15%;
+  top: 475%;
+}
+.mailMeButton {
+  position: relative;
+  right: 15%;
+  top: 325%;
+  width: 2.5cm;
+}
+
+.mailMeButton-afterCyberToggle {
+  position: relative;
+  right: 15%;
+  top: 475%;
+  width: 2.5cm;
+}
+.callMeButton {
+  position: relative;
+  right: 53%;
+  top: 350%;
+  width: 2.5cm;
+}
+
+.callMeButton-afterCyberToggle {
+  position: relative;
+  right: 53%;
+  top: 500%;
+  width: 2.5cm;
+}
+.locateMeButton {
+  position: relative;
+  right: 15%;
+  top: 355%;
+  width: 2.5cm;
+}
+
+.locateMeButton-afterCyberToggle {
+  position: relative;
+  right: 15%;
+  top: 505%;
+  width: 2.5cm;
+}
+.placeHolderButton {
+  color: transparent;
+  position: relative;
+  top: 450%;
+  text-align: center;
+}
+
+.placeHolderButton-afterCyberToggle {
+  color: transparent;
+  position: relative;
+  top: 575%;
+  text-align: center;
+}
+.fallCTFButton {
+  position: relative;
+  right: 40%;
+  top: 405%;
+  width: 6.5cm;
+}
+.CSAWButton {
+  position: relative;
+  right: 74%;
+  top: 455%;
+  width: 6.5cm;
+}
+.buckeyeCTF {
+  position: relative;
+  right: 40%;
+  top: 470%;
+  width: 6.5cm;
+}
