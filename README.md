@@ -20,7 +20,7 @@
 ![experience_projects_orange](https://user-images.githubusercontent.com/80439868/209493079-b7dbc609-e238-4c9a-836b-a05b36f0254f.png)
 
 ## Experience_Cyber Page Blue:
-![experience_cyber_blue](https://user-images.githubusercontent.com/80439868/209493089-8627381f-54ae-4d53-9350-aaaa97585d99.png)
+![experience_cyber_blue](https://user-images.githubusercontent.com/80439868/209493289-281797a2-e6a6-4950-bb09-2c062cd40800.png)
 
 ## Experience_Cyber Page Orange:
 ![experience_cyber_orange](https://user-images.githubusercontent.com/80439868/209493122-ecf2048f-7216-43be-ab8a-5999456ee90d.png)
