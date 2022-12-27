@@ -1,3 +1,6 @@
+/*call reset.css*/
+@import "reset.css";
+
 h1 {
   color: rgb(255, 255, 255);
   text-align: left;
@@ -398,7 +401,7 @@ a:active {
 }
 .fallCTFButton {
   position: relative;
-    /*50*/
+  /*50*/
   right: 50%;
   top: 285%;
   /*-120*/
