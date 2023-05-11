@@ -9,6 +9,13 @@ body {
   background-color: rgb(67, 206, 252);
 }
 
+.whiteText {
+  color: rgb(255, 255, 255);
+}
+.whiteText:hover {
+  color: rgb(67, 206, 252);
+}
+
 .cButton {
   background-color: rgb(240, 128, 128);
   /* color:rgb(240, 128, 128); */
@@ -17,7 +24,7 @@ body {
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
   font-size: 16px;
   margin: 4px 2px;
   transition-duration: 0.4s;
@@ -153,7 +160,7 @@ a:active {
 }
 .bottomText {
   font-size: var(--small-font-size);
-  display: block;
+  display: flex;
   text-align: center;
 }
 .inputBox {
