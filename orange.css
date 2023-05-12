@@ -192,10 +192,19 @@ a:active {
 .projectButtons-afterCyberToggle {
   font-size: larger;
   position: relative;
-  left: 60%;
-  top: 225%;
   text-align: center;
   width: 5cm;
+}
+.pCButtons-afterCyberToggle {
+  position: relative;
+  left: 60%;
+  top: 225%;
+}
+
+.pCButtons {
+  position: relative;
+  left: 60%;
+  top: 60%;
 }
 
 .hackathonsTitle {
@@ -208,8 +217,6 @@ a:active {
 .projectButtons {
   font-size: larger;
   position: relative;
-  left: 60%;
-  top: 60%;
   text-align: center;
   width: 5cm;
 }
@@ -225,7 +232,7 @@ a:active {
 .project1-text {
   position: relative;
   top: 100%;
-  right: 77%;
+  right: 89%;
 }
 .project2 {
   position: relative;
@@ -238,7 +245,7 @@ a:active {
 .project2-text {
   position: relative;
   top: 100%;
-  right: 7%;
+  left: 24%;
 }
 .project3 {
   position: relative;
@@ -251,7 +258,7 @@ a:active {
 .project3-text {
   position: relative;
   top: 100%;
-  right: 57%;
+  left: -80%;
 }
 .project4 {
   position: relative;
@@ -264,7 +271,7 @@ a:active {
 .project4-text {
   position: relative;
   top: 100%;
-  right: 7%;
+  left: 24%;
 }
 
 .projectButton-project {
@@ -411,41 +418,29 @@ a:active {
 }
 .mailMeButton {
   position: relative;
-  right: -28%;
-  top: 208%;
   width: 2.5cm;
 }
 
 .mailMeButton-afterCyberToggle {
   position: relative;
-  right: -28%;
-  top: 410%;
   width: 2.5cm;
 }
 .callMeButton {
   position: relative;
-  right: -28%;
-  top: 210%;
   width: 2.5cm;
 }
 
 .callMeButton-afterCyberToggle {
   position: relative;
-  right: -28%;
-  top: 413%;
   width: 2.5cm;
 }
 .locateMeButton {
   position: relative;
-  right: -28%;
-  top: 213%;
   width: 2.5cm;
 }
 
 .locateMeButton-afterCyberToggle {
   position: relative;
-  right: -28%;
-  top: 416%;
   width: 2.5cm;
 }
 .placeHolderButton {
@@ -455,27 +450,26 @@ a:active {
   text-align: center;
 }
 
+.contactButtons {
+  position: relative;
+  top: 208%;
+  right: -28%;
+}
+
+.contactButtons-afterCyberToggle {
+  position: relative;
+  top: 408%;
+  right: -28%;
+}
+
 .placeHolderButton-afterCyberToggle {
   color: transparent;
   position: relative;
   top: 575%;
   text-align: center;
 }
-.fallCTFButton {
-  position: relative;
-  right: 50%;
-  top: 285%;
+
+.ctfButton {
   width: 6.5cm;
 }
-.CSAWButton {
-  position: relative;
-  right: 50%;
-  top: 288%;
-  width: 6.5cm;
-}
-.buckeyeCTF {
-  position: relative;
-  right: 50%;
-  top: 291%;
-  width: 6.5cm;
-}
+

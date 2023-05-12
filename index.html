@@ -108,14 +108,24 @@
               above a 3.80 GPA while maintaining membership in various clubs as
               well as participating in different volunteer programs.
             </p>
-            <a href="#ContactMe">
+
+            <!-- CHANGES START HERE OLD IS COMMENT -->
+            <!-- <a href="#ContactMe">
               <button
                 style="position: relative; top: 10%"
                 class="cButton contactButton"
               >
                 Contact Me <i class="uil uil-navigator"></i>
               </button>
-            </a>
+            </a> -->
+            <p style="color: white; position: relative; top: 10%">
+              <a href="#ContactMe">
+                <button class="cButton contactButton">
+                  Contact Me <i class="uil uil-navigator"></i>
+                </button>
+              </a>
+            </p>
+            <!-- CHANGES END HERE OLD IS COMMENT -->
 
             <p style="color: white; position: relative; top: 27%">
               <a href="#About">
@@ -227,15 +237,25 @@
                 </span>
               </span>
             </p>
+            <!-- CHANGES START HERE OLD IS COMMENT -->
             <!--Resume download-->
-            <a href="assets/Resume.pdf" download target="_blank">
+            <!-- <a href="assets/Resume.pdf" download target="_blank">
               <button
                 style="position: relative; top: 65%; left: 30%"
                 class="cButton contactButton"
               >
                 Download Resume <i class="uil uil-download-alt"></i>
               </button>
-            </a>
+            </a> -->
+
+            <p style="color: white; position: relative; top: 65%; left:30%">
+              <a href="assets/Resume.pdf" download target="_blank">
+                <button class="cButton contactButton">
+                  Download Resume <i class="uil uil-download-alt"></i>
+                </button>
+              </a>
+            </p>
+            <!-- CHANGES END HERE OLD IS COMMENT -->
           </div>
           <div style="width: 23%">
             <!-- make port2.png 50% smaller-->
@@ -521,15 +541,18 @@
             <h2 id="experienceHeader" class="headers">
               <a id="Experience"> Experience </a>
             </h2>
+            <p id="expButtons">
             <button onclick="projectsToggle()" id="projectButton">
               Projects
             </button>
             <button onclick="cyberToggle()" id="cyberButton">
               Cybersecurity
             </button>
+          </p>
           </div>
           <!--========================================= Project 1 ===========================================-->
           <div style="width: 50%" id="projectDiv">
+           <p style="position:relative; top:77%; right:12%">
             <a
               href="https://github.com/nkozlo3/LinkedListLuvrs-OpenFlights-Graph-Algorithm.git"
               target="_blank"
@@ -540,6 +563,8 @@
               Comprehensive data analysis using graph algorithms <br />
               (Dijkstra, SCC, DFS, visuals) written in C++
             </div>
+          </p>
+
             <!--========================================= Project 2 ===========================================-->
             <span
               style="float: right; position: relative; right: 25%; top: 80%"
@@ -560,6 +585,7 @@
             </span>
 
             <!--========================================= Project 3 ===========================================-->
+           <p style="position:relative; top:55.5%; right:12%">
             <a
               href="https://github.com/nkozlo3/ChromePasswordManagerExtension.git"
               target="_blank"
@@ -573,6 +599,7 @@
               Chrome Password Manager Extension <br />
               (JavaScript and HTML)
             </div>
+            </p>
 
             <!--========================================= Project 4 ===========================================-->
             <span style="float: right; position: relative; right: 25%; top: 2%">
@@ -594,24 +621,31 @@
           <!--========================================= Cybersecurity portion ===========================================-->
           <div style="width: 50%" id="cyberDiv">
             <p class="paragraphs hackathonsTitle">Hackathons</p>
+
+            <p style="position:relative; right:50%; top:285%">
             <a href="https://fallctf.sigpwny.com/" target="_blank">
-              <button class="cButton contactButton fallCTFButton">
+              <button class="cButton contactButton ctfButton">
                 Fall CTF <br />
                 24th place
               </button>
             </a>
+          </p>
+          <p style="position:relative; right:50%; top:288%">
             <a href="https://www.csaw.io/ctf" target="_blank">
-              <button class="cButton contactButton CSAWButton">
+              <button class="cButton contactButton ctfButton">
                 CSAW Quarterfinals <br />
                 8th place
               </button>
             </a>
+            </p>
+          <p style="position:relative; right:50%; top:291%">
             <a href="https://ctf.osucyber.club/" target="_blank">
-              <button class="cButton contactButton buckeyeCTF">
+              <button class="cButton contactButton ctfButton">
                 BuckeyeCTF <br />
                 Placed
               </button>
             </a>
+            </p>
           </div>
         </div>
       </section>
@@ -670,6 +704,7 @@
             </button>
           </form>
           <div style="width: 50%">
+            <p id="contactButtons">
             <!--Email me button-->
             <a
               id="emailMeButton"
@@ -688,6 +723,7 @@
               target="_blank"
               >Urbana, IL <i class="uil uil-map-marker"></i
             ></a>
+          </p>
 
             <!--placeholder-->
             <p id="contactMePlaceholder" class="paragraphs placeHolderButton">

@@ -188,10 +188,14 @@ a:active {
 .projectButtons-afterCyberToggle {
   font-size: larger;
   position: relative;
-  left: 60%;
-  top: 225%;
   text-align: center;
   width: 5cm;
+}
+
+.pCButtons-afterCyberToggle {
+  position: relative;
+  left: 60%;
+  top: 225%;
 }
 
 .hackathonsTitle {
@@ -204,11 +208,16 @@ a:active {
 .projectButtons {
   font-size: larger;
   position: relative;
-  left: 60%;
-  top: 60%;
   text-align: center;
   width: 5cm;
 }
+
+.pCButtons {
+  position: relative;
+  left: 60%;
+  top: 60%;
+}
+
 .projectButton-project {
   background-color: rgb(240, 128, 128);
   border: 2px solid rgb(0, 59, 223);
@@ -242,7 +251,7 @@ a:active {
 .project2-text {
   position: relative;
   top: 100%;
-  right: 7%;
+  left: 24%;
 }
 .project3 {
   position: relative;
@@ -255,7 +264,7 @@ a:active {
 .project3-text {
   position: relative;
   top: 55%;
-  right: 89%;
+  right: 80%;
 }
 .project4 {
   position: relative;
@@ -268,7 +277,7 @@ a:active {
 .project4-text {
   position: relative;
   top: 77%;
-  right: 7%;
+  left: 24%;
 }
 .contactHeader {
   text-align: center;
@@ -353,41 +362,29 @@ a:active {
 }
 .mailMeButton {
   position: relative;
-  right: -28%;
-  top: 208%;
   width: 2.5cm;
 }
 
 .mailMeButton-afterCyberToggle {
   position: relative;
-  right: -28%;
-  top: 410%;
   width: 2.5cm;
 }
 .callMeButton {
   position: relative;
-  right: -28%;
-  top: 210%;
   width: 2.5cm;
 }
 
 .callMeButton-afterCyberToggle {
   position: relative;
-  right: -28%;
-  top: 413%;
   width: 2.5cm;
 }
 .locateMeButton {
   position: relative;
-  right: -28%;
-  top: 213%;
   width: 2.5cm;
 }
 
 .locateMeButton-afterCyberToggle {
   position: relative;
-  right: -28%;
-  top: 416%;
   width: 2.5cm;
 }
 .placeHolderButton {
@@ -397,30 +394,24 @@ a:active {
   text-align: center;
 }
 
+.contactButtons {
+  position: relative;
+  top: 208%;
+  right: -28%;
+}
+
+.contactButtons-afterCyberToggle {
+  position: relative;
+  top: 408%;
+  right: -28%;
+}
+
 .placeHolderButton-afterCyberToggle {
   color: transparent;
   position: relative;
   top: 575%;
   text-align: center;
 }
-.fallCTFButton {
-  position: relative;
-    /*50*/
-  right: 50%;
-  top: 285%;
-  /*-120*/
-
-  width: 6.5cm;
-}
-.CSAWButton {
-  position: relative;
-  right: 50%;
-  top: 288%;
-  width: 6.5cm;
-}
-.buckeyeCTF {
-  position: relative;
-  right: 50%;
-  top: 291%;
+.ctfButton {
   width: 6.5cm;
 }

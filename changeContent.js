@@ -1,5 +1,6 @@
 // function called on page load
 window.onload = function () {
+  // Elements from the header "Experience" to the project/cyber button
   var expHeader = document.getElementById("experienceHeader");
   expHeader.className = "headers projectHeader";
 
@@ -9,6 +10,11 @@ window.onload = function () {
   var projectButton = document.getElementById("projectButton");
   projectButton.className =
     "cButton contactButton projectButtons projectButton-project";
+
+  var pCButtons = document.getElementById("expButtons");
+  pCButtons.className = "pCButtons";
+
+
 
   var contactHeader = document.getElementById("contactHeader");
   contactHeader.className = "headers contactHeader";
@@ -27,6 +33,12 @@ window.onload = function () {
 
   var contactSubmitButton = document.getElementById("contactSubmitButton");
   contactSubmitButton.className = "cButton contactButton contactSubmitButton";
+
+
+  // The contact elements i.e. email, call, location
+
+  var contactButtons = document.getElementById("contactButtons");
+  contactButtons.className = "contactButtons"
 
   var emailMeButton = document.getElementById("emailMeButton");
   emailMeButton.className = "cButton contactButton mailMeButton";
@@ -47,6 +59,8 @@ window.onload = function () {
 };
 
 function projectsToggle() {
+
+  // Elements from the header "Experience" to the project/cyber button
   var expHeader = document.getElementById("experienceHeader");
   expHeader.className = "headers projectHeader";
 
@@ -56,6 +70,10 @@ function projectsToggle() {
   var projectButton = document.getElementById("projectButton");
   projectButton.className =
     "cButton contactButton projectButtons projectButton-project";
+
+    var pCButtons = document.getElementById("expButtons");
+    pCButtons.className = "pCButtons";
+
 
   var contactHeader = document.getElementById("contactHeader");
   contactHeader.className = "headers contactHeader";
@@ -75,6 +93,12 @@ function projectsToggle() {
   var contactSubmitButton = document.getElementById("contactSubmitButton");
   contactSubmitButton.className = "cButton contactButton contactSubmitButton";
 
+
+  // The contact elements i.e. email, call, location
+
+  var contactButtons = document.getElementById("contactButtons");
+  contactButtons.className = "contactButtons"
+
   var emailMeButton = document.getElementById("emailMeButton");
   emailMeButton.className = "cButton contactButton mailMeButton";
 
@@ -93,6 +117,7 @@ function projectsToggle() {
   cyber.style.display = "none";
 }
 function cyberToggle() {
+  // Elements from the header "Experience" to the project/cyber button
   var expHeader = document.getElementById("experienceHeader");
   expHeader.className = "headers projectHeader-afterCyberToggle";
 
@@ -103,6 +128,11 @@ function cyberToggle() {
   var projectButton = document.getElementById("projectButton");
   projectButton.className =
     "cButton contactButton projectButtons-afterCyberToggle";
+
+  var pCButtons = document.getElementById("expButtons");
+  pCButtons.className = "pCButtons-afterCyberToggle";
+
+
 
   var contactHeader = document.getElementById("contactHeader");
   contactHeader.className = "headers contactHeader-afterCyberToggle";
@@ -123,6 +153,14 @@ function cyberToggle() {
 
   contactSubmitButton.className =
     "cButton contactButton contactSubmitButton-afterCyberToggle";
+
+
+
+
+  // The contact elements i.e. email, call, location
+
+  var contactButtons = document.getElementById("contactButtons");
+  contactButtons.className = "contactButtons-afterCyberToggle"
 
   var emailMeButton = document.getElementById("emailMeButton");
   emailMeButton.className =
