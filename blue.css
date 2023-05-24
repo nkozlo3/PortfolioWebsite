@@ -1,3 +1,10 @@
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  padding: 5%;
+}
+
 h1 {
   color: rgb(255, 255, 255);
   text-align: left;
@@ -29,6 +36,14 @@ body {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+}
+
+/* style for img with id portPic1 */
+#portPic1 {
+  /* style="position: relative; top: 40%; left: 10%" */
+  position: relative;
+  top: 40%;
+  left: 10%;
 }
 
 .contactButton {
@@ -314,7 +329,7 @@ a:active {
 
 .contactInputNameBox {
   position: relative;
-  right: 15%;
+  right: 35%;
   top: 200%;
 }
 
@@ -326,7 +341,7 @@ a:active {
 
 .contactInputEmailBox {
   position: relative;
-  right: 15%;
+  right: 35%;
   top: 200%;
 }
 
@@ -337,7 +352,7 @@ a:active {
 }
 .contactInputMessageBox {
   position: relative;
-  right: 15%;
+  right: 35%;
   top: 200%;
   width: 609px;
   height: 150px;
@@ -352,7 +367,7 @@ a:active {
 }
 .contactSubmitButton {
   position: relative;
-  right: 15%;
+  right: 35%;
   top: 200%;
 }
 
@@ -362,6 +377,7 @@ a:active {
   top: 400%;
 }
 .mailMeButton {
+  right: 35%;
   position: relative;
   width: 2.5cm;
 }
@@ -371,6 +387,7 @@ a:active {
   width: 2.5cm;
 }
 .callMeButton {
+  right: 35%;
   position: relative;
   width: 2.5cm;
 }
@@ -380,6 +397,7 @@ a:active {
   width: 2.5cm;
 }
 .locateMeButton {
+  right: 35%;
   position: relative;
   width: 2.5cm;
 }

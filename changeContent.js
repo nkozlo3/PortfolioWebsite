@@ -14,8 +14,6 @@ window.onload = function () {
   var pCButtons = document.getElementById("expButtons");
   pCButtons.className = "pCButtons";
 
-
-
   var contactHeader = document.getElementById("contactHeader");
   contactHeader.className = "headers contactHeader";
 
@@ -34,11 +32,10 @@ window.onload = function () {
   var contactSubmitButton = document.getElementById("contactSubmitButton");
   contactSubmitButton.className = "cButton contactButton contactSubmitButton";
 
-
   // The contact elements i.e. email, call, location
 
   var contactButtons = document.getElementById("contactButtons");
-  contactButtons.className = "contactButtons"
+  contactButtons.className = "contactButtons";
 
   var emailMeButton = document.getElementById("emailMeButton");
   emailMeButton.className = "cButton contactButton mailMeButton";
@@ -59,7 +56,6 @@ window.onload = function () {
 };
 
 function projectsToggle() {
-
   // Elements from the header "Experience" to the project/cyber button
   var expHeader = document.getElementById("experienceHeader");
   expHeader.className = "headers projectHeader";
@@ -71,9 +67,8 @@ function projectsToggle() {
   projectButton.className =
     "cButton contactButton projectButtons projectButton-project";
 
-    var pCButtons = document.getElementById("expButtons");
-    pCButtons.className = "pCButtons";
-
+  var pCButtons = document.getElementById("expButtons");
+  pCButtons.className = "pCButtons";
 
   var contactHeader = document.getElementById("contactHeader");
   contactHeader.className = "headers contactHeader";
@@ -93,11 +88,10 @@ function projectsToggle() {
   var contactSubmitButton = document.getElementById("contactSubmitButton");
   contactSubmitButton.className = "cButton contactButton contactSubmitButton";
 
-
   // The contact elements i.e. email, call, location
 
   var contactButtons = document.getElementById("contactButtons");
-  contactButtons.className = "contactButtons"
+  contactButtons.className = "contactButtons";
 
   var emailMeButton = document.getElementById("emailMeButton");
   emailMeButton.className = "cButton contactButton mailMeButton";
@@ -132,8 +126,6 @@ function cyberToggle() {
   var pCButtons = document.getElementById("expButtons");
   pCButtons.className = "pCButtons-afterCyberToggle";
 
-
-
   var contactHeader = document.getElementById("contactHeader");
   contactHeader.className = "headers contactHeader-afterCyberToggle";
 
@@ -154,13 +146,10 @@ function cyberToggle() {
   contactSubmitButton.className =
     "cButton contactButton contactSubmitButton-afterCyberToggle";
 
-
-
-
   // The contact elements i.e. email, call, location
 
   var contactButtons = document.getElementById("contactButtons");
-  contactButtons.className = "contactButtons-afterCyberToggle"
+  contactButtons.className = "contactButtons-afterCyberToggle";
 
   var emailMeButton = document.getElementById("emailMeButton");
   emailMeButton.className =
