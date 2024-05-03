@@ -1,3 +1,20 @@
+/* formatting for screens of size 450 px or less */
+@media screen and(max-width: 450px) {
+  #wrapper {
+    font-size: 11vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 1%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .navbar {
+    padding: 2rem 0.25rem 4rem;
+  }
+}
+
 #wrapper {
   margin-left: auto;
   margin-right: auto;
