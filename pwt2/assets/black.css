@@ -365,8 +365,24 @@ header h1 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: -100%;
+  margin-left: -10%;
   gap: 0rem;
+}
+
+.contact-inputs textarea {
+  background-color: transparent;
+  color: white;
+  outline: 2px solid brown;
+  height: 6rem;
+  width: 30rem;
+}
+
+.contact-inputs input {
+  background-color: transparent;
+  color: white;
+  outline: 2px solid brown;
+  height: 2rem;
+  width: 15rem;
 }
 
 /* Mobile Devices */
@@ -426,6 +442,13 @@ header h1 {
 
   .lone-experience-item {
     align-items: flex-start;
+  }
+
+  .contact-inputs {
+    margin-left: 0;
+  }
+  .contact-inputs textarea {
+    width: 20rem;
   }
 }
 
