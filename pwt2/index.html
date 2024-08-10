@@ -19,6 +19,119 @@
         }
       }
     </script>
+    <script>
+      function showContent(category, button) {
+        const content = {
+          projects: `
+          <div class="headers-generic">
+            <h1>Projects</h1>
+          </div>
+          `,
+          experience: `
+          <div class="experience-content">
+            <div class="experience-item">
+              <div class="headers-experience">
+                <h1>Lead Data Structures TA</h1>
+              </div>
+              <div class="experience-meta">
+                <p>University of Illinois</p>
+                <p>Jan 2023 - Present</p>
+              </div>
+              <div class="experience-content-bullets">
+                <ul>
+                  <li>
+                    Promoted to a Lead Course Assistant because of demonstrated
+                    leadership and commitment to improving the course
+                  </li>
+                  <li>
+                    Served as a first point of contact for students requiring
+                    debugging assistance completing assignments in C++
+                  </li>
+                  <li>
+                    Fixed vulnerability in the course’s autograder that allowed
+                    students to run arbitrary code as the root user
+                  </li>
+                  <li>
+                    Wrote shell scripts that automatically configure students’
+                    developer environments
+                  </li>
+                  <li>
+                    Created assignments covering the implementation of Bloom
+                    filters, the A-star algorithm, and BFS
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="headers-experience">
+                <h1>Software Engineer Intern</h1>
+              </div>
+              <div class="experience-meta">
+                <p>Sandia National Laboratories</p>
+                <p>May 2024 - Aug 2024</p>
+              </div>
+              <div class="experience-content-bullets">
+                <ul>
+                  <li>
+                    Optimized C++ code responsible for computing correlation
+                    between objects to run 40% faster
+                  </li>
+                  <li>
+                    Researched and implemented N-ball covariance increasing
+                    classification accuracy many times over
+                  </li>
+                  <li>
+                    Modernized old C++ code increasing readability,
+                    maintainability, and security
+                  </li>
+                  <li>Fixed a bug causing incorrect correlations</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="headers-experience">
+              <h1>Developer Intern</h1>
+            </div>
+            <div class="experience-meta">
+              <p>ALDI USA</p>
+              <p>May 2023 - Aug 2023</p>
+            </div>
+            <div class="experience-content-bullets">
+              <ul>
+                <li>
+                  Wrote Python script to automate translation of EMV codes
+                </li>
+                <li>
+                  Wrote Python script to check which computers need Java updates
+                  saving IT hours each day
+                </li>
+                <li>
+                  Supported the development of AREP (ALDI Real Estate Portal) by
+                  implementing HTTP Requests and a new Class in C#
+                </li>
+                <li>Participated in ALDI’s agile development environment</li>
+              </ul>
+            </div>
+          </div>
+          `,
+          education: `
+          <div class="headers-generic">
+            <h1>Education</h1>
+          </div>
+          `,
+        };
+        document.getElementById("experience-content").innerHTML =
+          content[category];
+
+        const buttons = document.querySelectorAll(
+          ".experience-buttons .cButton"
+        );
+        buttons.forEach((btn) => btn.classList.remove("active"));
+
+        button.classList.add("active");
+      }
+    </script>
   </head>
   <body>
     <section id="navbar">
@@ -90,7 +203,7 @@
 
     <section id="about">
       <div class="about-me-container">
-        <div class="about-me-headers">
+        <div class="headers-generic">
           <h1>About Me</h1>
           <p style="font-size: large">My Introduction</p>
         </div>
@@ -130,6 +243,167 @@
       </div>
     </section>
 
-    <section id="skills"></section>
+    <section id="skills">
+      <div class="skills-container">
+        <div class="headers-generic">
+          <h1>Skills</h1>
+          <p style="font-size: large">My Tech Stack</p>
+        </div>
+        <div class="skills-item-row">
+          <div class="skills-item">
+            <img src="https://img.icons8.com/color/48/null/python--v1.png" />
+            <p>Python</p>
+          </div>
+          <div class="skills-item">
+            <img
+              src="https://img.icons8.com/color/48/null/c-plus-plus-logo.png"
+            />
+            <p>C++</p>
+          </div>
+          <div class="skills-item">
+            <img src="https://img.icons8.com/color/48/null/c-programming.png" />
+            <p>C</p>
+          </div>
+        </div>
+        <div class="skills-item-row">
+          <div class="skills-item">
+            <img src="https://img.icons8.com/color/48/null/docker.png" />
+            <p>Docker</p>
+          </div>
+          <div class="skills-item">
+            <img src="https://img.icons8.com/color/48/null/git.png" />
+            <p>Git</p>
+          </div>
+          <div class="skills-item">
+            <img src="https://img.icons8.com/color/48/null/linux.png" />
+            <p>Linux</p>
+          </div>
+        </div>
+        <div class="skills-item-row">
+          <div class="skills-item">
+            <img src="https://img.icons8.com/fluency/48/window-bug.png" />
+            <p>GDB</p>
+          </div>
+          <div class="skills-item">
+            <img src="https://img.icons8.com/color/48/sd.png" />
+            <p>Valgrind</p>
+          </div>
+          <div class="skills-item">
+            <img
+              src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-agile-no-code-flaticons-flat-flat-icons.png"
+              alt="external-agile-no-code-flaticons-flat-flat-icons"
+            />
+            <p>Agile</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="experience-container">
+        <div class="headers-generic">
+          <h1>Experience</h1>
+        </div>
+        <div class="experience-buttons">
+          <button onclick="showContent('experience', this)" class="cButton">
+            Experience
+          </button>
+          <button onclick="showContent('projects', this)" class="cButton">
+            Projects
+          </button>
+          <button onclick="showContent('education', this)" class="cButton">
+            Education
+          </button>
+        </div>
+        <div id="experience-content">
+          <div class="experience-content">
+            <div class="experience-item">
+              <div class="headers-experience">
+                <h1>Lead Data Structures TA</h1>
+              </div>
+              <div class="experience-meta">
+                <p>University of Illinois</p>
+                <p>Jan 2023 - Present</p>
+              </div>
+              <div class="experience-content-bullets">
+                <ul>
+                  <li>
+                    Promoted to a Lead Course Assistant because of demonstrated
+                    leadership and commitment to improving the course
+                  </li>
+                  <li>
+                    Served as a first point of contact for students requiring
+                    debugging assistance completing assignments in C++
+                  </li>
+                  <li>
+                    Fixed vulnerability in the course’s autograder that allowed
+                    students to run arbitrary code as the root user
+                  </li>
+                  <li>
+                    Wrote shell scripts that automatically configure students’
+                    developer environments
+                  </li>
+                  <li>
+                    Created assignments covering the implementation of Bloom
+                    filters, the A-star algorithm, and BFS
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="headers-experience">
+                <h1>Software Engineer Intern</h1>
+              </div>
+              <div class="experience-meta">
+                <p>Sandia National Laboratories</p>
+                <p>May 2024 - Aug 2024</p>
+              </div>
+              <div class="experience-content-bullets">
+                <ul>
+                  <li>
+                    Optimized C++ code responsible for computing correlation
+                    between objects to run 40% faster
+                  </li>
+                  <li>
+                    Researched and implemented N-ball covariance increasing
+                    classification accuracy many times over
+                  </li>
+                  <li>
+                    Modernized old C++ code increasing readability,
+                    maintainability, and security
+                  </li>
+                  <li>Fixed a bug causing incorrect correlations</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="experience-item lone-experience-item">
+            <div class="headers-experience">
+              <h1>Developer Intern</h1>
+            </div>
+            <div class="experience-meta">
+              <p>ALDI USA</p>
+              <p>May 2023 - Aug 2023</p>
+            </div>
+            <div class="experience-content-bullets">
+              <ul>
+                <li>
+                  Wrote Python script to automate translation of EMV codes
+                </li>
+                <li>
+                  Wrote Python script to check which computers need Java updates
+                  saving IT hours each day
+                </li>
+                <li>
+                  Supported the development of AREP (ALDI Real Estate Portal) by
+                  implementing HTTP Requests and a new Class in C#
+                </li>
+                <li>Participated in ALDI’s agile development environment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
