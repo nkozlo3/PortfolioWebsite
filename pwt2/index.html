@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neil Kozlowski</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="assets/black.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script>
+      function switchStylesheet() {
+        var stylesheet = document.getElementById("theme-stylesheet");
+        if (stylesheet.getAttribute("href") === "black.css") {
+          stylesheet.setAttribute("href", "red.css");
+        } else {
+          stylesheet.setAttribute("href", "black.css");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <section id="navbar">
+      <div class="navbar">
+        <div class="navbar-brand">Neil</div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section id="home">
+      <div class="container">
+        <div class="content-wrapper">
+          <header>
+            <div class="header-content">
+              <h1>
+                Hi, I am <br />
+                Neil Kozlowski
+              </h1>
+            </div>
+          </header>
+          <div class="body-content">
+            <div class="home-icons">
+              <a href="https://github.com/nkozlo3" target="_blank">
+                <i class="uil uil-github linkIcons"></i>
+              </a>
+              <a href="https://linkedin.com/in/kozlowskiN" target="_blank">
+                <i class="uil uil-linkedin-alt linkIcons"></i>
+              </a>
+              <a href="mailto:leinkozlo7@gmail.com">
+                <i class="uil uil-envelope-send linkIcons"></i>
+              </a>
+            </div>
+            <p>
+              Currently a Senior at University of Illinois at Urbana-Champaign
+              studying to obtain my Bachelor's degree in Computer Science &
+              Statistics. I'm interested in new grad and entry level
+              opportunities in the various fields of computer science. My
+              greatest strengths are communication, leadership skills, and
+              adaptability which will assist me throughout my professional
+              career. At school and work I have consistently maintained above
+              3.7 GPA while maintaining membership in various clubs as well as
+              participating in different volunteer programs. Along with my
+              education I have gained valuable experience through different
+              internships. <br />
+              <a href="#ContactMe">
+                <button class="cButton">
+                  Contact Me <i class="uil uil-navigator"></i>
+                </button>
+              </a>
+              <a href="#about" class="scroll-down">
+                <i class="uil uil-mouse mouseIcon"></i>
+                <span style="font-size: large">Scroll Down</span>
+                <i class="uil uil-arrow-down arrowIcon"></i>
+              </a>
+            </p>
+            <img id="portPic1" src="assets/port1.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-me-container">
+        <div class="about-me-headers">
+          <h1>About Me</h1>
+          <p style="font-size: large">My Introduction</p>
+        </div>
+        <div class="about-me-content">
+          <div class="text-and-image">
+            <img style="height: 60vh" id="portPic2" src="assets/port2.png" />
+            <div class="about-me-additional">
+              <p>
+                A committed and hardworking individual with experience and
+                proficiency in C++, C, Python, and other OOP languages. As well
+                as data structures and algorithm optimization. Seeking an
+                opportunity to use my knowledge of Computer Science in a
+                professional scenario.
+              </p>
+              <div class="about-me-items">
+                <div class="about-me-item">
+                  <h1>07+</h1>
+                  <p>Projects Completed</p>
+                </div>
+                <div class="about-me-item">
+                  <h1>03+</h1>
+                  <p>Years Experience</p>
+                </div>
+                <div class="about-me-item">
+                  <h1>3.7</h1>
+                  <p>GPA</p>
+                </div>
+              </div>
+              <a href="assets/Resume.pdf" download target="_blank">
+                <button class="cButton resumeD">
+                  Download Resume <i class="uil uil-download-alt"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills"></section>
+  </body>
+</html>
