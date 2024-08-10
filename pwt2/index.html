@@ -23,8 +23,59 @@
       function showContent(category, button) {
         const content = {
           projects: `
-          <div class="headers-generic">
-            <h1>Projects</h1>
+          <div class="experience-content">
+            <div class="experience-item">
+              <div class="headers-experience">
+                <h1>Password Manager</h1>
+              </div>
+              <div class="experience-content-bullets">
+                <ul>
+                  <li>
+                    Wrote a password manager extension for chrome that creates, stores, and autofills passwords, in JavaScript
+                  </li>
+                  <li>
+                    Implemented an algorithm that encrypts passwords using a master key, allowing for their secure storage
+                  </li>
+                  <li>
+                    Built a secure method of mapping website names to encrypted passwords, preventing malicious websites from reading
+passwords for other websites
+                  </li>
+                </ul>
+                <p><br/></p>
+                <a
+                  href="https://github.com/nkozlo3/ChromePasswordManagerExtension.git"
+                  target="_blank"
+                >
+                <img src="assets/chrome.png"/>
+                </a>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="headers-experience">
+                <h1>Flight Paths</h1>
+              </div>
+              <div class="experience-content-bullets">
+                <ul>
+                  <li>
+                    Performed comprehensive data analysis of flight paths across the world using C++
+
+                  </li>
+                  <li>
+                    Used Dijkstra’s algorithm, Tarjan’s strongly connected component algorithm, and depth first search to answer various
+                    questions about the flight paths dataset
+                  </li>
+                  <li>
+                    Created a visualization of flights across the world using the Mercator projection
+                  </li>
+                </ul>
+                <p><br/></p>
+                <a href="https://github.com/nkozlo3/LinkedListLuvrs-OpenFlights-Graph-Algorithm.git"
+                target="_blank"
+                >
+                <img src="assets/open.png"/>
+                </a>
+              </div>
+            </div>
           </div>
           `,
           experience: `
@@ -89,7 +140,7 @@
               </div>
             </div>
           </div>
-          <div class="experience-item">
+          <div class="experience-item lone-experience-item">
             <div class="headers-experience">
               <h1>Developer Intern</h1>
             </div>
@@ -114,10 +165,28 @@
               </ul>
             </div>
           </div>
+        </div>
           `,
           education: `
-          <div class="headers-generic">
-            <h1>Education</h1>
+          <div class="experience-item lone-experience-item">
+            <div class="headers-experience">
+              <h1>University of Illinois, Urbana-Champaign</h1>
+            </div>
+            <div class="experience-meta">
+              <p>B.S. in Computer Science & Statistics | GPA:3.65/4.00</p>
+              <p>Aug 2020 - Dec 2024</p>
+            </div>
+            <div class="experience-content-bullets">
+              <ul>
+                <li style=font-size:large>
+                  <p style=font-style:oblique>Coursework: </p> Data Structures, Systems Programming, Computer Architecture, Algorithms & models of computation,
+programming languages and compilers, Advanced Math & Statistics
+                </li>
+                <li style=font-size:large>
+                <p style=font-style:oblique>Extracurriculars & Honors: </p> Cybersecurity Club & Dean’s List
+                </li>
+              </ul>
+            </div>
           </div>
           `,
         };
@@ -401,6 +470,23 @@
                 <li>Participated in ALDI’s agile development environment</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-container">
+        <div class="headers-generic">
+          <h1>Contact</h1>
+          <p>Get in Touch</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-inputs">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <textarea placeholder="Message"></textarea>
+            <button class="cButton">Send</button>
           </div>
         </div>
       </div>
