@@ -201,6 +201,16 @@ programming languages and compilers, Advanced Math & Statistics
         button.classList.add("active");
       }
     </script>
+    <script>
+      function sendMessage() {
+        const name = document.getElementById("name-input").value;
+        const email = document.getElementById("email-input").value;
+        const message = document.getElementById("message-input").value;
+
+        const mailtoLink = `mailto:leinkozlo7@gmail.com?subject=Contact from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
+        window.location.href = mailtoLink;
+      }
+    </script>
   </head>
   <body>
     <section id="navbar">
@@ -480,10 +490,10 @@ programming languages and compilers, Advanced Math & Statistics
         </div>
         <div class="contact-content">
           <div class="contact-inputs">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <textarea placeholder="Message"></textarea>
-            <button class="cButton" onclick="">
+            <input id="name-input" type="text" placeholder="Name" />
+            <input id="email-input" type="email" placeholder="Email" />
+            <textarea id="message-input" placeholder="Message"></textarea>
+            <button class="cButton" onclick="sendMessage()">
               Send Message <i class="uil uil-plane-fly"></i>
             </button>
           </div>
