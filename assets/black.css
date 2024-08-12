@@ -372,7 +372,7 @@ header h1 {
 .contact-inputs textarea {
   background-color: transparent;
   color: white;
-  outline: 2px solid brown;
+  outline: 1px solid red;
   height: 10rem;
   width: 30rem;
 }
@@ -380,7 +380,7 @@ header h1 {
 .contact-inputs input {
   background-color: transparent;
   color: white;
-  outline: 2px solid brown;
+  outline: 1px solid red;
   height: 2rem;
   width: 20rem;
 }
