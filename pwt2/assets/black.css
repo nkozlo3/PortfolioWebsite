@@ -373,7 +373,7 @@ header h1 {
   background-color: transparent;
   color: white;
   outline: 2px solid brown;
-  height: 6rem;
+  height: 10rem;
   width: 30rem;
 }
 
@@ -382,7 +382,19 @@ header h1 {
   color: white;
   outline: 2px solid brown;
   height: 2rem;
-  width: 15rem;
+  width: 20rem;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 /* Mobile Devices */
@@ -450,6 +462,16 @@ header h1 {
   .contact-inputs textarea {
     width: 20rem;
   }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contact-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0rem;
+  }
 }
 
 /* Tablets */
@@ -494,6 +516,22 @@ header h1 {
   }
   .lone-experience-item {
     align-items: flex-start;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contact-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0rem;
+  }
+  .contact-container {
+    padding-top: 30%;
+  }
+  #contact {
+    height: 120vh;
   }
 }
 
