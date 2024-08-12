@@ -209,6 +209,10 @@ programming languages and compilers, Advanced Math & Statistics
 
         const mailtoLink = `mailto:leinkozlo7@gmail.com?subject=Contact from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
         window.location.href = mailtoLink;
+
+        emailInput.value = "";
+        nameInput.value = "";
+        messageInput.value = "";
       }
     </script>
   </head>
