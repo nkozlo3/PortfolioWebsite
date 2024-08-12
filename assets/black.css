@@ -406,6 +406,10 @@ header h1 {
     padding-right: 1rem;
   }
 
+  .navbar {
+    display: none;
+  }
+
   .body-content img {
     /* remove image (doesn't fit)*/
     display: none;
@@ -472,6 +476,21 @@ header h1 {
     flex-direction: row;
     gap: 0rem;
   }
+  #home {
+    padding-top: 2rem;
+  }
+  #home,
+  #about,
+  #skills,
+  #experience {
+    height: auto;
+    padding-bottom: 5rem; /* Ensure consistent padding at the bottom */
+  }
+
+  #contact {
+    height: auto;
+    min-height: 100vh;
+  }
 }
 
 /* Tablets */
@@ -530,8 +549,17 @@ header h1 {
   .contact-container {
     padding-top: 30%;
   }
+
+  #home,
+  #about,
+  #skills,
+  #experience {
+    height: auto;
+    padding-bottom: 5rem; /* Ensure consistent padding at the bottom */
+  }
   #contact {
-    height: 120vh;
+    height: auto;
+    /* min-height: 100vh; */
   }
 }
 
