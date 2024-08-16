@@ -25,6 +25,17 @@
           button.classList.remove("uil-sun");
           button.classList.add("uil-moon");
         }
+
+        const phone_button = document.getElementById(
+          "change-color-button-phone"
+        );
+        if (phone_button.classList.contains("uil-sun")) {
+          phone_button.classList.remove("uil-sun");
+          phone_button.classList.add("uil-moon");
+        } else {
+          phone_button.classList.remove("uil-moon");
+          phone_button.classList.add("uil-sun");
+        }
       }
     </script>
     <script>
@@ -240,7 +251,7 @@ programming languages and compilers, Advanced Math & Statistics
                 href="#"
                 id="change-color-button"
                 onclick="switchStylesheet()"
-                class="navbar-p uil uil-moon"
+                class="navbar-p uil uil-sun"
               ></p>
             </li>
           </ul>
@@ -269,9 +280,9 @@ programming languages and compilers, Advanced Math & Statistics
               </a>
               <p
                 href="#"
-                id="change-color-button"
+                id="change-color-button-phone"
                 onclick="switchStylesheet()"
-                class="navbar-p-small uil uil-moon"
+                class="navbar-p-small uil uil-sun"
               ></p>
             </div>
             <p>
