@@ -45,6 +45,13 @@ body {
   width: 70%;
 }
 
+.navbar p {
+  color: red;
+}
+.navbar p:hover {
+  color: rgb(214, 177, 177);
+}
+
 a:link,
 a:visited {
   color: red;
@@ -62,7 +69,9 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
+  height: auto;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
 }
 
 .container {
@@ -166,7 +175,8 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh; /* Full viewport height */
+  height: auto;
+  padding-bottom: 5rem;
 }
 
 .about-me-container {
@@ -232,7 +242,8 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh; /* Full viewport height */
+  height: auto;
+  padding-bottom: 5rem;
 }
 
 .skills-container {
@@ -273,7 +284,8 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh; /* Full viewport height */
+  height: auto;
+  padding-bottom: 5rem;
 }
 
 .experience-container {
@@ -344,7 +356,8 @@ header h1 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh; /* Full viewport height */
+  height: auto;
+  padding-bottom: 5rem;
 }
 
 .contact-container {
@@ -484,7 +497,7 @@ header h1 {
   #skills,
   #experience {
     height: auto;
-    padding-bottom: 5rem; /* Ensure consistent padding at the bottom */
+    padding-bottom: 5rem;
   }
 
   #contact {
@@ -499,7 +512,7 @@ header h1 {
     width: 75%;
     margin: 0 auto;
     padding-left: 2rem;
-    padding-top: 15%;
+    /* padding-top: 15%; */
   }
 
   .body-content img {
@@ -512,10 +525,6 @@ header h1 {
   }
   .header-content {
     margin-left: 7%;
-  }
-
-  #about {
-    padding-top: 20%;
   }
 
   .text-and-image img {
@@ -546,16 +555,16 @@ header h1 {
     flex-direction: row;
     gap: 0rem;
   }
-  .contact-container {
+  /* .contact-container {
     padding-top: 30%;
-  }
+  } */
 
   #home,
   #about,
   #skills,
   #experience {
     height: auto;
-    padding-bottom: 5rem; /* Ensure consistent padding at the bottom */
+    padding-bottom: 5rem;
   }
   #contact {
     height: auto;

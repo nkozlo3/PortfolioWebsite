@@ -10,12 +10,20 @@
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <script>
-      function switchStylesheet() {
+      function switchStylesheet(category) {
         var stylesheet = document.getElementById("theme-stylesheet");
-        if (stylesheet.getAttribute("href") === "black.css") {
-          stylesheet.setAttribute("href", "red.css");
+        if (stylesheet.getAttribute("href") === "assets/black.css") {
+          stylesheet.setAttribute("href", "assets/red.css");
         } else {
-          stylesheet.setAttribute("href", "black.css");
+          stylesheet.setAttribute("href", "assets/black.css");
+        }
+        const button = document.getElementById("change-color-button");
+        if (button.classList.contains("uil-moon")) {
+          button.classList.remove("uil-moon");
+          button.classList.add("uil-sun");
+        } else {
+          button.classList.remove("uil-sun");
+          button.classList.add("uil-moon");
         }
       }
     </script>
@@ -227,6 +235,14 @@ programming languages and compilers, Advanced Math & Statistics
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact Me</a></li>
+            <li>
+              <p
+                href="#"
+                id="change-color-button"
+                onclick="switchStylesheet()"
+                class="navbar-p uil uil-moon"
+              ></p>
+            </li>
           </ul>
         </nav>
       </div>
@@ -385,7 +401,10 @@ programming languages and compilers, Advanced Math & Statistics
           <h1>Experience</h1>
         </div>
         <div class="experience-buttons">
-          <button onclick="showContent('experience', this)" class="cButton">
+          <button
+            onclick="showContent('experience', this)"
+            class="cButton active"
+          >
             Experience
           </button>
           <button onclick="showContent('projects', this)" class="cButton">
