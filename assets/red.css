@@ -138,6 +138,14 @@ header h1 {
   gap: 1.2rem;
 }
 
+.home-icons p {
+  color: black;
+}
+
+.home-icons p:hover {
+  color: rgb(211, 211, 211);
+}
+
 .navbar-p-small {
   display: none;
 }
