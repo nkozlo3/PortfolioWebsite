@@ -18,23 +18,19 @@
           stylesheet.setAttribute("href", "assets/black.css");
         }
         const button = document.getElementById("change-color-button");
-        if (button.classList.contains("uil-moon")) {
-          button.classList.remove("uil-moon");
-          button.classList.add("uil-sun");
-        } else {
-          button.classList.remove("uil-sun");
-          button.classList.add("uil-moon");
-        }
-
         const phone_button = document.getElementById(
           "change-color-button-phone"
         );
-        if (phone_button.classList.contains("uil-sun")) {
-          phone_button.classList.remove("uil-sun");
-          phone_button.classList.add("uil-moon");
-        } else {
+        if (stylesheet.getAttribute("href") === "assets/black.css") {
+          button.classList.remove("uil-moon");
+          button.classList.add("uil-sun");
           phone_button.classList.remove("uil-moon");
           phone_button.classList.add("uil-sun");
+        } else {
+          button.classList.remove("uil-sun");
+          button.classList.add("uil-moon");
+          phone_button.classList.remove("uil-sun");
+          phone_button.classList.add("uil-moon");
         }
       }
     </script>
