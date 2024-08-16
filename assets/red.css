@@ -6,7 +6,7 @@
 
 body {
   color: black;
-  background-color: rgb(105, 39, 39);
+  background-color: rgb(244, 62, 62);
 }
 
 .navbar {
@@ -149,7 +149,7 @@ header h1 {
   transition-duration: 0.4s;
   cursor: pointer;
   margin-top: 5%;
-  background-color:rgb(105, 39, 39);;
+  background-color:rgb(244, 62, 62);;
   color: black;
   border: 2px solid black;
 }
