@@ -460,11 +460,6 @@ header h1 {
     margin-left: 0;
   }
 
-  .scroll-down {
-    margin-left: -10%;
-    width: 100%;
-  }
-
   .text-and-image img {
     display: none;
   }
