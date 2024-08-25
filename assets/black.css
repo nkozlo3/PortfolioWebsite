@@ -459,10 +459,10 @@ header h1 {
     margin-left: 0;
   }
 
-  .scroll-down {
+  /* .scroll-down {
     margin-left: -10%;
     width: 100%;
-  }
+  } */
 
   .text-and-image img {
     display: none;
@@ -477,7 +477,7 @@ header h1 {
 
   #intro-stuff {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .experience-container {
     display: flex;

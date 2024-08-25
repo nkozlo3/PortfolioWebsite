@@ -483,7 +483,7 @@ header h1 {
 
   #intro-stuff {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   #experience {
