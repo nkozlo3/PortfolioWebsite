@@ -9,13 +9,13 @@ html {
 }
 
 body {
-  color: black;
-  background-color: rgb(244, 62, 62);
+  color: rgb(87, 82, 121);
+  background-color: rgb(250, 244, 237);
 }
 
 .navbar {
   position: fixed;
-  color: rgb(211, 211, 211);
+  color: rgb(180, 99, 122);
   display: flex;
   justify-content: space-between;
   top: 0;
@@ -50,22 +50,33 @@ body {
 }
 
 .navbar p {
-  color: black;
+  color: rgb(87, 82, 121);
 }
 
 .navbar p:hover {
-  color: rgb(211, 211, 211);
+  color: rgb(180, 99, 122);
 }
 
-a:link,
-a:visited {
-  color: black;
+.standard-links {
+  color: rgb(87, 82, 121);
   background-color: transparent;
   text-decoration: none;
 }
-a:hover,
-a:active {
-  color: rgb(211, 211, 211);
+
+.standard-links:visited {
+  color: rgb(87, 82, 121);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.non-standard-links {
+  color: rgb(144, 122, 169);
+}
+
+
+.standard-links:hover,
+.standard-links:active {
+  color: rgb(180, 99, 122);
   background-color: transparent;
   text-decoration: none;
 }
@@ -105,12 +116,12 @@ header {
 }
 
 .header-content:hover h1 {
-  color: rgb(147, 147, 147);
+  color: rgb(40, 105, 131);
 }
 
 header h1 {
   font-size: 2rem;
-  color: rgb(211, 211, 211);
+  color: rgb(144, 122, 169);
 }
 
 .body-content {
@@ -143,11 +154,11 @@ header h1 {
 }
 
 .home-icons p {
-  color: black;
+  color: rgb(87, 82, 121);
 }
 
 .home-icons p:hover {
-  color: rgb(211, 211, 211);
+  color: rgb(180, 99, 122);
 }
 
 .navbar-p-small {
@@ -165,18 +176,18 @@ header h1 {
   transition-duration: 0.4s;
   cursor: pointer;
   margin-top: 5%;
-  background-color: rgb(244, 62, 62);
-  color: black;
-  border: 2px solid black;
+  background-color: rgb(250, 244, 237);
+  color: rgb(144, 122, 169);
+  border: 2px solid rgb(87, 82, 121);
 }
 
 .cButton:hover {
-  background-color: rgb(147, 147, 147);
+  background-color: rgb(40, 105, 131);
   color: rgb(200, 200, 200);
 }
 
 .cButton.active {
-  background-color: rgb(147, 147, 147);
+  background-color: rgb(40, 105, 131);
   color: rgb(200, 200, 200);
 }
 
@@ -220,11 +231,11 @@ header h1 {
 
 .headers-generic h1 {
   font-size: 2rem;
-  color: rgb(211, 211, 211);
+  color: rgb(144, 122, 169);
 }
 
 .headers-generic:hover h1 {
-  color: rgb(147, 147, 147);
+  color: rgb(40, 105, 131);
 }
 
 .about-me-content {
@@ -256,10 +267,10 @@ header h1 {
 
 .about-me-item h1 {
   font-size: xx-large;
-  color: rgb(211, 211, 211);
+  color: rgb(144, 122, 169);
 }
 .about-me-item:hover h1 {
-  color: rgb(147, 147, 147);
+  color: rgb(40, 105, 131);
 }
 
 #skills {
@@ -293,11 +304,11 @@ header h1 {
 }
 
 .skills-item p {
-  color: black;
+  color: rgb(87, 82, 121);
 }
 
 .skills-item:hover p {
-  color: rgb(211, 211, 211);
+  color: rgb(180, 99, 122);
 }
 
 .skills-item:hover img {
@@ -346,22 +357,22 @@ header h1 {
 .experience-item img {
   width: 65%;
   height: 50%;
-  background-color: rgb(211, 211, 211);
-  color: black;
-  border: 1px solid black;
+  background-color: rgb(180, 99, 122);
+  color: rgb(87, 82, 121);
+  border: 1px solid rgb(87, 82, 121);
 }
 
 .experience-item:hover img {
-  background-color: black;
-  box-shadow: 0 0 10px black;
+  background-color: rgb(87, 82, 121);
+  box-shadow: 0 0 10px rgb(87, 82, 121);
 }
 
 .headers-experience {
   display: flex;
-  color: rgb(211, 211, 211);
+  color: rgb(144, 122, 169);
 }
 .headers-experience:hover {
-  color: black;
+  color: rgb(180, 99, 122);
 }
 
 .experience-meta {
@@ -408,16 +419,16 @@ header h1 {
 
 .contact-inputs textarea {
   background-color: transparent;
-  color: black;
-  outline: 1px solid black;
+  color: rgb(87, 82, 121);
+  outline: 1px solid rgb(87, 82, 121);
   height: 10rem;
   width: 30rem;
 }
 
 .contact-inputs input {
   background-color: transparent;
-  color: black;
-  outline: 1px solid black;
+  color: rgb(87, 82, 121);
+  outline: 1px solid rgb(87, 82, 121);
   height: 2rem;
   width: 20rem;
 }
@@ -480,7 +491,6 @@ header h1 {
     display: flex;
     flex-direction: column;
   }
-
 
   #experience {
     height: 150vh;

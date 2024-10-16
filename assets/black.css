@@ -56,14 +56,24 @@ body {
   color: rgb(214, 177, 177);
 }
 
-a:link,
-a:visited {
+.standard-links {
   color: red;
   background-color: transparent;
   text-decoration: none;
 }
-a:hover,
-a:active {
+
+.standard-links:visited {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.non-standard-links {
+  color: white;
+}
+
+.standard-links:hover,
+.standard-links:active {
   color: rgb(214, 177, 177);
   background-color: transparent;
   text-decoration: none;
