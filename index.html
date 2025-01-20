@@ -18,7 +18,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neil</title>
-    <link id="theme-stylesheet" rel="stylesheet" href="assets/black.css" />
+    <link id="theme-stylesheet" rel="stylesheet" href="assets/red.css" />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
@@ -26,16 +26,16 @@
     <script>
       function switchStylesheet(category) {
         var stylesheet = document.getElementById("theme-stylesheet");
-        if (stylesheet.getAttribute("href") === "assets/black.css") {
-          stylesheet.setAttribute("href", "assets/red.css");
-        } else {
+        if (stylesheet.getAttribute("href") === "assets/red.css") {
           stylesheet.setAttribute("href", "assets/black.css");
+        } else {
+          stylesheet.setAttribute("href", "assets/red.css");
         }
         const button = document.getElementById("change-color-button");
         const phone_button = document.getElementById(
           "change-color-button-phone"
         );
-        if (stylesheet.getAttribute("href") === "assets/black.css") {
+        if (stylesheet.getAttribute("href") === "assets/red.css") {
           button.classList.remove("uil-moon");
           button.classList.add("uil-sun");
           phone_button.classList.remove("uil-moon");
