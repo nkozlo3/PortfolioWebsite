@@ -263,20 +263,6 @@
         button.classList.add("active");
       }
     </script>
-    <script>
-      function sendMessage() {
-        const name = document.getElementById("name-input").value;
-        const email = document.getElementById("email-input").value;
-        const message = document.getElementById("message-input").value;
-
-        const mailtoLink = `mailto:leinkozlo7@gmail.com?subject=Contact from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AMessage: ${message}`;
-        window.location.href = mailtoLink;
-
-        emailInput.value = "";
-        nameInput.value = "";
-        messageInput.value = "";
-      }
-    </script>
   </head>
   <body>
     <section id="navbar">
@@ -601,14 +587,38 @@
           <p>Get in Touch</p>
         </div>
         <div class="contact-content">
-          <div class="contact-inputs">
-            <input id="name-input" type="text" placeholder="Name" />
-            <input id="email-input" type="email" placeholder="Email" />
-            <textarea id="message-input" placeholder="Message"></textarea>
-            <button class="cButton" onclick="sendMessage()">
+          <form
+            class="contact-inputs"
+            action="https://formspree.io/f/xjkwbbdn"
+            method="POST"
+          >
+            <label>
+              <input
+                id="name-input"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+            </label>
+            <label>
+              <input
+                id="email-input"
+                type="email"
+                name="email"
+                placeholder="Email"
+              />
+            </label>
+            <label>
+              <textarea
+                id="message-input"
+                name="message"
+                placeholder="Message"
+              ></textarea>
+            </label>
+            <button class="cButton" type="submit">
               Send Message <i class="uil uil-plane-fly"></i>
             </button>
-          </div>
+          </form>
           <div class="contact-buttons">
             <a
               class="cButton"
