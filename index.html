@@ -49,6 +49,17 @@
       }
     </script>
     <script>
+      function changeExperienceLayout() {
+        if (window.innerWidth <= 900) {
+          console.log("reeee bitch, " + window.innerWidth);
+        } else {
+          console.log("psych");
+        }
+      }
+      changeExperienceLayout();
+      window.addEventListener("resize", changeExperienceLayout);
+    </script>
+    <script>
       function showContent(category, button) {
         const content = {
           projects: `
@@ -105,7 +116,7 @@
                   href="https://github.com/nkozlo3/song-recs.git"
                   target="_blank"
                 >
-                <img src="assets/rollingStones.jpg"/>
+                <img src="assets/rolling_stones.jpg"/>
                 </a>
               </div>
             </div>

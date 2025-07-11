@@ -355,8 +355,8 @@ header h1 {
 }
 
 .experience-item img {
-  width: 65%;
-  height: 50%;
+  display: inherit;
+  width: 60%;
   background-color: rgb(180, 99, 122);
   color: rgb(87, 82, 121);
   border: 1px solid rgb(87, 82, 121);

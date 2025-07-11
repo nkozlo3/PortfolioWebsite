@@ -353,8 +353,8 @@ header h1 {
 }
 
 .experience-item img {
-  width: 65%;
-  height: 50%;
+  display: inherit;
+  width: 60%;
   background-color: rgb(240, 128, 128);
   color: white;
   border: 1px solid red;
@@ -549,7 +549,6 @@ header h1 {
     width: 75%;
     margin: 0 auto;
     padding-left: 2rem;
-    /* padding-top: 15%; */
   }
 
   .body-content img {
@@ -590,9 +589,6 @@ header h1 {
     flex-direction: row;
     gap: 0rem;
   }
-  /* .contact-container {
-    padding-top: 30%;
-  } */
 
   #home,
   #about,
@@ -603,7 +599,13 @@ header h1 {
   }
   #contact {
     height: auto;
-    /* min-height: 100vh; */
+  }
+}
+
+/*Tablets/smaller devices experience section*/
+@media (max-width: 900px) {
+  .experience-content {
+    flex-direction: column;
   }
 }
 
